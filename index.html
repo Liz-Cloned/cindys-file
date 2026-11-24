@@ -38,6 +38,10 @@
     AWEBER_LISTNAME: "awlist4385291",          // ~Cosmos Subscribers (list id 4385291)
     AWEBER_WEB_FORM_ID: "970892867",           // AWeber form "for auto submit" on the Cosmos list; browser POST tested 2026-11-24
     AWEBER_SPLIT_ID: "",
+    // Every answer is ALSO posted to a capture-only list, because AWeber will not update a
+    // subscriber who is already on the Cosmos list. Its answers are copied onto Cosmos records
+    // through the AWeber API (copy_quiz_answers.py). No mail is ever sent from it; confirmation is off.
+    CAPTURE_LISTNAME: "awlist6987477",         // zDS Quiz Answers (no mail), list id 6987477
     AWEBER_REDIRECT: "",
     AWEBER_ADTRACKING_PREFIX: "dsquiz",        // ad tracking e.g. "dsquiz-money" (AWeber cuts ad tracking at 20 characters)
     // AWeber custom fields are posted as "custom <Field Name>". The names here
@@ -808,6 +812,17 @@
     });
     document.body.appendChild(f); f.submit();
     setTimeout(function(){ f.remove(); }, 5000);
+    if (CONFIG.CAPTURE_LISTNAME) {
+      var sink2 = document.createElement('iframe'); sink2.name = 'aw-sink-2'; sink2.hidden = true; sink2.title = 'Sign-up'; document.body.appendChild(sink2);
+      var g = document.createElement('form');
+      g.method = 'POST'; g.action = CONFIG.AWEBER_ACTION; g.target = 'aw-sink-2'; g.acceptCharset = 'UTF-8'; g.hidden = true;
+      var cap = Object.assign({}, fields, { listname: CONFIG.CAPTURE_LISTNAME, meta_web_form_id: '', meta_message: '' });
+      Object.keys(cap).forEach(function(k){
+        var i = document.createElement('input'); i.type = 'hidden'; i.name = k; i.value = cap[k] == null ? '' : cap[k]; g.appendChild(i);
+      });
+      document.body.appendChild(g); g.submit();
+      setTimeout(function(){ g.remove(); sink2.remove(); }, 8000);
+    }
   }
 
   document.getElementById('emailForm').addEventListener('submit', function(ev){
