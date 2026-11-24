@@ -1,0 +1,94 @@
+{
+  "version": "1.0",
+  "as_of": "2026-11-23",
+  "events_file": "EVENTS.json",
+  "valid_today_from": "2026-11-23",
+  "valid_today_to": "2027-12-31",
+  "signs": [
+    "Aries",
+    "Taurus",
+    "Gemini",
+    "Cancer",
+    "Leo",
+    "Virgo",
+    "Libra",
+    "Scorpio",
+    "Sagittarius",
+    "Capricorn",
+    "Aquarius",
+    "Pisces"
+  ],
+  "areas": {
+    "money": [
+      2,
+      8
+    ],
+    "love": [
+      5,
+      7
+    ],
+    "work": [
+      6,
+      10
+    ],
+    "home": [
+      4
+    ],
+    "mouth": [
+      3
+    ]
+  },
+  "house_names": {
+    "2": "house of money",
+    "8": "house of debts",
+    "5": "house of romance",
+    "7": "house of partners",
+    "6": "house of daily work",
+    "10": "house of career",
+    "4": "house of home and family",
+    "3": "house of what you say"
+  },
+  "house_method": "Whole-sign solar houses from the birth Sun sign (BIBLE §5): the sign is the 1st house, the next sign the 2nd, and so on. house = (index(event sign) - index(birth sign)) mod 12 + 1.",
+  "scoring_rule": [
+    "Hard events are the entries of EVENTS.json: new and full moons, Mars or Saturn changing sign, and squares and oppositions between two of Sun through Pluto. An aspect counts only if it becomes exact, and it counts on the day it becomes exact; an aspect that comes within the show's orbs (BIBLE §4 rules 2 and 4) but never becomes exact is not a hard event. Moon aspects and quarter moons are not hard events.",
+    "An event lands in the houses of its lands_in_signs: a full moon in the Sun's and the Moon's signs, a new moon in its sign, an ingress in the sign entered, an aspect in both planets' signs. It counts once for an area, however many of its signs fall in that area's houses.",
+    "Each event is dated by the visitor's LOCAL calendar date of its exact UT moment, in the visitor's IANA time zone (or fixed UTC offset).",
+    "The window is the 30 local dates from today through today + 29, inclusive.",
+    "A date's score is the number of hard events that land in the area's houses on it. The answer is the highest-scoring date; a tie goes to the earlier date.",
+    "If no event lands in the area's houses in the window, the answer is the no_event line.",
+    "today must fall between valid_today_from and valid_today_to; outside that range EVENTS.json does not cover the whole window and the scorer refuses."
+  ],
+  "body_names": {
+    "sun": "the Sun",
+    "moon": "the Moon",
+    "mercury": "Mercury",
+    "venus": "Venus",
+    "mars": "Mars",
+    "jupiter": "Jupiter",
+    "saturn": "Saturn",
+    "uranus": "Uranus",
+    "neptune": "Neptune",
+    "pluto": "Pluto"
+  },
+  "aspect_verbs": {
+    "square": "squares",
+    "opposition": "opposes"
+  },
+  "templates": {
+    "rank1": "Your worst day in the next 30 days is {date}: {events}.",
+    "no_event": "Nothing hard lands on that part of your life in the next 30 days.",
+    "date": "{month_name} {day_ordinal}, e.g. December 8th",
+    "join": "one: A; two: A, and B; three or more: A, B, and C",
+    "phrases": {
+      "new_moon": "the new moon lands in your {h}",
+      "full_moon_both": "the full moon lands across your {h_sun} and your {h_moon}",
+      "full_moon_moon": "the full moon lands in your {h_moon}",
+      "full_moon_sun": "the full moon lands opposite your {h_sun}",
+      "ingress": "{body} enters your {h}",
+      "aspect_both": "{a} in your {h_a} {verb} {b} in your {h_b}",
+      "aspect_a": "{a} in your {h_a} {verb} {b}",
+      "aspect_b": "{a} {verb} {b} in your {h_b}"
+    },
+    "phrase_notes": "{h...} is the house name of that body's sign, given only when the house is one of the area's houses. Events on one date are phrased in UT order."
+  }
+}
