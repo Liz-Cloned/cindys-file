@@ -33,18 +33,18 @@
 
     /* ---------- AWEBER (standard web-form POST) ---------- */
     // false = nothing is sent; the payload is printed to the browser console.
-    SEND_TO_AWEBER: false,
+    SEND_TO_AWEBER: true,                      // on 2026-11-24 (Liz): keep what people tell us
     AWEBER_ACTION: "https://www.aweber.com/scripts/addlead.pl",
     AWEBER_LISTNAME: "awlist4385291",          // ~Cosmos Subscribers (list id 4385291)
-    AWEBER_WEB_FORM_ID: "",
+    AWEBER_WEB_FORM_ID: "970892867",           // AWeber form "for auto submit" on the Cosmos list; browser POST tested 2026-11-24
     AWEBER_SPLIT_ID: "",
     AWEBER_REDIRECT: "",
-    AWEBER_ADTRACKING_PREFIX: "doomscopes-quiz", // ad tracking becomes e.g. "doomscopes-quiz-money"
+    AWEBER_ADTRACKING_PREFIX: "dsquiz",        // ad tracking e.g. "dsquiz-money" (AWeber cuts ad tracking at 20 characters)
     // AWeber custom fields are posted as "custom <Field Name>". The names here
     // must match the custom fields on the list EXACTLY. They may not exist yet.
-    FIELD_BIRTH_DATE: "custom birth_date",
-    FIELD_SIGN: "custom sun_sign",
-    FIELD_AREA: "custom worry_area",
+    FIELD_BIRTH_DATE: "custom birth_date",     // created on the list 2026-11-24
+    FIELD_SIGN: "custom sun_sign",             // created on the list 2026-11-24
+    FIELD_AREA: "custom worry_area",           // created on the list 2026-11-24
 
     /* ---------- OFFER ---------- */
     CHART_URL: "https://hop.clickbank.net/?affiliate=nobs01&vendor=cosmicpro&tid=dsquiz",
@@ -791,6 +791,7 @@
       meta_split_id: CONFIG.AWEBER_SPLIT_ID,
       redirect: CONFIG.AWEBER_REDIRECT,
       meta_adtracking: CONFIG.AWEBER_ADTRACKING_PREFIX + '-' + state.area,
+      meta_tags: 'doomscopes-quiz,quiz-' + state.area + ',sign-' + String(state.sign || '').toLowerCase(),
       meta_message: '1',
       meta_required: 'email',
       email: email,
