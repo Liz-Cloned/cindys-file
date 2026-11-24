@@ -42,6 +42,7 @@
     // subscriber who is already on the Cosmos list. Its answers are copied onto Cosmos records
     // through the AWeber API (copy_quiz_answers.py). No mail is ever sent from it; confirmation is off.
     CAPTURE_LISTNAME: "awlist6987477",         // zDS Quiz Answers (no mail), list id 6987477
+    CAPTURE_WEB_FORM_ID: "71115765",          // sign-up form on the capture list
     AWEBER_REDIRECT: "",
     AWEBER_ADTRACKING_PREFIX: "dsquiz",        // ad tracking e.g. "dsquiz-money" (AWeber cuts ad tracking at 20 characters)
     // AWeber custom fields are posted as "custom <Field Name>". The names here
@@ -816,7 +817,7 @@
       var sink2 = document.createElement('iframe'); sink2.name = 'aw-sink-2'; sink2.hidden = true; sink2.title = 'Sign-up'; document.body.appendChild(sink2);
       var g = document.createElement('form');
       g.method = 'POST'; g.action = CONFIG.AWEBER_ACTION; g.target = 'aw-sink-2'; g.acceptCharset = 'UTF-8'; g.hidden = true;
-      var cap = Object.assign({}, fields, { listname: CONFIG.CAPTURE_LISTNAME, meta_web_form_id: '', meta_message: '' });
+      var cap = Object.assign({}, fields, { listname: CONFIG.CAPTURE_LISTNAME, meta_web_form_id: CONFIG.CAPTURE_WEB_FORM_ID, meta_message: '' });
       Object.keys(cap).forEach(function(k){
         var i = document.createElement('input'); i.type = 'hidden'; i.name = k; i.value = cap[k] == null ? '' : cap[k]; g.appendChild(i);
       });
