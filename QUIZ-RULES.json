@@ -1,6 +1,6 @@
 {
-  "version": "1.0",
-  "as_of": "2026-11-23",
+  "version": "1.1",
+  "as_of": "2026-11-25",
   "events_file": "EVENTS.json",
   "valid_today_from": "2026-11-23",
   "valid_today_to": "2027-12-31",
@@ -50,12 +50,13 @@
   },
   "house_method": "Whole-sign solar houses from the birth Sun sign (BIBLE §5): the sign is the 1st house, the next sign the 2nd, and so on. house = (index(event sign) - index(birth sign)) mod 12 + 1.",
   "scoring_rule": [
-    "Hard events are the entries of EVENTS.json: new and full moons, Mars or Saturn changing sign, and squares and oppositions between two of Sun through Pluto. An aspect counts only if it becomes exact, and it counts on the day it becomes exact; an aspect that comes within the show's orbs (BIBLE §4 rules 2 and 4) but never becomes exact is not a hard event. Moon aspects and quarter moons are not hard events.",
+    "Hard events are the entries of EVENTS.json that are not marked fallback: new and full moons, Mars or Saturn changing sign, and squares and oppositions between two of Sun through Pluto. An aspect counts only if it becomes exact, and it counts on the day it becomes exact; an aspect that comes within the show's orbs (BIBLE §4 rules 2 and 4) but never becomes exact is not a hard event. Quarter moons are not hard events.",
+    "Fallback events are the entries of EVENTS.json marked fallback: the Moon's squares and oppositions to Saturn, Uranus and Pluto, each counted on the day it becomes exact (BIBLE §4 rule 4: the Moon gets credit for an aspect it completes within the date). They are used only when no hard event lands in the area's houses in the window, and are then counted the same way as hard events. They never add to a hard event's day.",
     "An event lands in the houses of its lands_in_signs: a full moon in the Sun's and the Moon's signs, a new moon in its sign, an ingress in the sign entered, an aspect in both planets' signs. It counts once for an area, however many of its signs fall in that area's houses.",
     "Each event is dated by the visitor's LOCAL calendar date of its exact UT moment, in the visitor's IANA time zone (or fixed UTC offset).",
     "The window is the 30 local dates from today through today + 29, inclusive.",
-    "A date's score is the number of hard events that land in the area's houses on it. The answer is the highest-scoring date; a tie goes to the earlier date.",
-    "If no event lands in the area's houses in the window, the answer is the no_event line.",
+    "A date's score is the number of hard events (or, when none lands in the window, fallback events) that land in the area's houses on it. The answer is the highest-scoring date; a tie goes to the earlier date.",
+    "If no hard event and no fallback event lands in the area's houses in the window, the answer is the no_event line.",
     "today must fall between valid_today_from and valid_today_to; outside that range EVENTS.json does not cover the whole window and the scorer refuses."
   ],
   "body_names": {

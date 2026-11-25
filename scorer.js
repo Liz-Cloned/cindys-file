@@ -81,12 +81,14 @@ function score(rules, events, sign, area, today, tz) {
   var signs = rules.signs, houses = rules.areas[area];
   function house(s) { return ((signs.indexOf(s) - signs.indexOf(sign)) % 12 + 12) % 12 + 1; }
   function h(s) { var n = house(s); return houses.indexOf(n) >= 0 ? rules.house_names[String(n)] : null; }
-  var end = addDays(today, 29), byDate = {};
+  var end = addDays(today, 29), byDate = {}, fallback = {};
   events.forEach(function (e) {  // EVENTS.json is in UT order
     if (!e.lands_in_signs.some(function (s) { return houses.indexOf(house(s)) >= 0; })) return;
     var d = localDate(e.ut, tz);
-    if (d >= today && d <= end) (byDate[d] = byDate[d] || []).push(e);
+    var to = e.fallback ? fallback : byDate;
+    if (d >= today && d <= end) (to[d] = to[d] || []).push(e);
   });
+  if (!Object.keys(byDate).length) byDate = fallback;  // the Moon's angles only when no hard event lands
   var dates = Object.keys(byDate).sort();
   if (!dates.length) {
     return {date: null, score: 0, events: [], line: fill(rules.templates.no_event, {area: area})};

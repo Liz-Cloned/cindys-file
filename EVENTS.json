@@ -1,7 +1,7 @@
 {
   "meta": {
     "volatility": "snapshot",
-    "as_of": "2026-11-23",
+    "as_of": "2026-11-25",
     "command": "py _PROJECTS/Studio-Productions/doomscopes/mailing/arc-01-2026-11-24/quiz/evergreen/build_evergreen.py",
     "span_ut": "2026-11-22T00:00Z to 2028-01-31T23:59Z",
     "valid_today_from": "2026-11-23",
@@ -13,11 +13,38 @@
       "full_moon": 15,
       "ingress": 8,
       "square": 57,
-      "opposition": 28
+      "opposition": 28,
+      "fallback_square": 96,
+      "fallback_opposition": 48
     },
-    "total": 123
+    "total": 267
   },
   "events": [
+    {
+      "id": "2026-11-22T15:51Z-square-moon-pluto",
+      "ut": "2026-11-22T15:51Z",
+      "type": "square",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Taurus",
+          "lon": 33.3998,
+          "position": "Taurus 3°24'"
+        },
+        {
+          "body": "pluto",
+          "sign": "Aquarius",
+          "lon": 303.3998,
+          "position": "Aquarius 3°24'"
+        }
+      ],
+      "lands_in_signs": [
+        "Taurus",
+        "Aquarius"
+      ],
+      "description": "Moon (Taurus 3°24') square Pluto (Aquarius 3°24'), exact 2026-11-22T15:51Z",
+      "fallback": true
+    },
     {
       "id": "2026-11-24T14:54Z-full_moon-sun-moon",
       "ut": "2026-11-24T14:54Z",
@@ -88,6 +115,106 @@
       "retrograde": false
     },
     {
+      "id": "2026-11-26T23:48Z-square-moon-saturn",
+      "ut": "2026-11-26T23:48Z",
+      "type": "square",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Cancer",
+          "lon": 98.1083,
+          "position": "Cancer 8°06'"
+        },
+        {
+          "body": "saturn",
+          "sign": "Aries",
+          "lon": 8.1083,
+          "position": "Aries 8°06'"
+        }
+      ],
+      "lands_in_signs": [
+        "Aries",
+        "Cancer"
+      ],
+      "description": "Moon (Cancer 8°06') square Saturn (Aries 8°06'), exact 2026-11-26T23:48Z",
+      "fallback": true
+    },
+    {
+      "id": "2026-11-28T17:09Z-opposition-moon-pluto",
+      "ut": "2026-11-28T17:09Z",
+      "type": "opposition",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Leo",
+          "lon": 123.5122,
+          "position": "Leo 3°31'"
+        },
+        {
+          "body": "pluto",
+          "sign": "Aquarius",
+          "lon": 303.5122,
+          "position": "Aquarius 3°31'"
+        }
+      ],
+      "lands_in_signs": [
+        "Leo",
+        "Aquarius"
+      ],
+      "description": "Moon (Leo 3°31') opposition Pluto (Aquarius 3°31'), exact 2026-11-28T17:09Z",
+      "fallback": true
+    },
+    {
+      "id": "2026-11-30T20:17Z-square-moon-uranus",
+      "ut": "2026-11-30T20:17Z",
+      "type": "square",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Virgo",
+          "lon": 153.47,
+          "position": "Virgo 3°28'"
+        },
+        {
+          "body": "uranus",
+          "sign": "Gemini",
+          "lon": 63.47,
+          "position": "Gemini 3°28'"
+        }
+      ],
+      "lands_in_signs": [
+        "Gemini",
+        "Virgo"
+      ],
+      "description": "Moon (Virgo 3°28') square Uranus (Gemini 3°28'), exact 2026-11-30T20:17Z",
+      "fallback": true
+    },
+    {
+      "id": "2026-12-03T10:52Z-opposition-moon-saturn",
+      "ut": "2026-12-03T10:52Z",
+      "type": "opposition",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Libra",
+          "lon": 187.9829,
+          "position": "Libra 7°59'"
+        },
+        {
+          "body": "saturn",
+          "sign": "Aries",
+          "lon": 7.9829,
+          "position": "Aries 7°59'"
+        }
+      ],
+      "lands_in_signs": [
+        "Aries",
+        "Libra"
+      ],
+      "description": "Moon (Libra 7°59') opposition Saturn (Aries 7°59'), exact 2026-12-03T10:52Z",
+      "fallback": true
+    },
+    {
       "id": "2026-12-04T07:03Z-square-mercury-jupiter",
       "ut": "2026-12-04T07:03Z",
       "type": "square",
@@ -136,6 +263,56 @@
       ],
       "description": "Mars (Virgo 3°18') square Uranus (Gemini 3°18'), exact 2026-12-04T19:28Z",
       "noon_orb": 0.121
+    },
+    {
+      "id": "2026-12-05T11:37Z-square-moon-pluto",
+      "ut": "2026-12-05T11:37Z",
+      "type": "square",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Scorpio",
+          "lon": 213.6544,
+          "position": "Scorpio 3°39'"
+        },
+        {
+          "body": "pluto",
+          "sign": "Aquarius",
+          "lon": 303.6544,
+          "position": "Aquarius 3°39'"
+        }
+      ],
+      "lands_in_signs": [
+        "Scorpio",
+        "Aquarius"
+      ],
+      "description": "Moon (Scorpio 3°39') square Pluto (Aquarius 3°39'), exact 2026-12-05T11:37Z",
+      "fallback": true
+    },
+    {
+      "id": "2026-12-07T21:24Z-opposition-moon-uranus",
+      "ut": "2026-12-07T21:24Z",
+      "type": "opposition",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Sagittarius",
+          "lon": 243.1785,
+          "position": "Sagittarius 3°11'"
+        },
+        {
+          "body": "uranus",
+          "sign": "Gemini",
+          "lon": 63.1785,
+          "position": "Gemini 3°11'"
+        }
+      ],
+      "lands_in_signs": [
+        "Gemini",
+        "Sagittarius"
+      ],
+      "description": "Moon (Sagittarius 3°11') opposition Uranus (Gemini 3°11'), exact 2026-12-07T21:24Z",
+      "fallback": true
     },
     {
       "id": "2026-12-08T10:29Z-opposition-mercury-uranus",
@@ -236,6 +413,81 @@
       "noon_orb": 0.197
     },
     {
+      "id": "2026-12-10T19:12Z-square-moon-saturn",
+      "ut": "2026-12-10T19:12Z",
+      "type": "square",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Capricorn",
+          "lon": 277.9311,
+          "position": "Capricorn 7°56'"
+        },
+        {
+          "body": "saturn",
+          "sign": "Aries",
+          "lon": 7.9311,
+          "position": "Aries 7°56'"
+        }
+      ],
+      "lands_in_signs": [
+        "Aries",
+        "Capricorn"
+      ],
+      "description": "Moon (Capricorn 7°56') square Saturn (Aries 7°56'), exact 2026-12-10T19:12Z",
+      "fallback": true
+    },
+    {
+      "id": "2026-12-15T10:18Z-square-moon-uranus",
+      "ut": "2026-12-15T10:18Z",
+      "type": "square",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Pisces",
+          "lon": 332.8793,
+          "position": "Pisces 2°53'"
+        },
+        {
+          "body": "uranus",
+          "sign": "Gemini",
+          "lon": 62.8793,
+          "position": "Gemini 2°53'"
+        }
+      ],
+      "lands_in_signs": [
+        "Gemini",
+        "Pisces"
+      ],
+      "description": "Moon (Pisces 2°53') square Uranus (Gemini 2°53'), exact 2026-12-15T10:18Z",
+      "fallback": true
+    },
+    {
+      "id": "2026-12-20T03:23Z-square-moon-pluto",
+      "ut": "2026-12-20T03:23Z",
+      "type": "square",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Taurus",
+          "lon": 34.0161,
+          "position": "Taurus 4°01'"
+        },
+        {
+          "body": "pluto",
+          "sign": "Aquarius",
+          "lon": 304.0161,
+          "position": "Aquarius 4°01'"
+        }
+      ],
+      "lands_in_signs": [
+        "Taurus",
+        "Aquarius"
+      ],
+      "description": "Moon (Taurus 4°01') square Pluto (Aquarius 4°01'), exact 2026-12-20T03:23Z",
+      "fallback": true
+    },
+    {
       "id": "2026-12-23T11:37Z-square-sun-neptune",
       "ut": "2026-12-23T11:37Z",
       "type": "square",
@@ -285,6 +537,56 @@
       "description": "Full Moon: Moon Cancer 2°14', Sun Capricorn 2°14', exact 2026-12-24T01:28Z"
     },
     {
+      "id": "2026-12-24T10:39Z-square-moon-saturn",
+      "ut": "2026-12-24T10:39Z",
+      "type": "square",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Cancer",
+          "lon": 98.0966,
+          "position": "Cancer 8°06'"
+        },
+        {
+          "body": "saturn",
+          "sign": "Aries",
+          "lon": 8.0966,
+          "position": "Aries 8°06'"
+        }
+      ],
+      "lands_in_signs": [
+        "Aries",
+        "Cancer"
+      ],
+      "description": "Moon (Cancer 8°06') square Saturn (Aries 8°06'), exact 2026-12-24T10:39Z",
+      "fallback": true
+    },
+    {
+      "id": "2026-12-26T03:53Z-opposition-moon-pluto",
+      "ut": "2026-12-26T03:53Z",
+      "type": "opposition",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Leo",
+          "lon": 124.1825,
+          "position": "Leo 4°11'"
+        },
+        {
+          "body": "pluto",
+          "sign": "Aquarius",
+          "lon": 304.1825,
+          "position": "Aquarius 4°11'"
+        }
+      ],
+      "lands_in_signs": [
+        "Leo",
+        "Aquarius"
+      ],
+      "description": "Moon (Leo 4°11') opposition Pluto (Aquarius 4°11'), exact 2026-12-26T03:53Z",
+      "fallback": true
+    },
+    {
       "id": "2026-12-26T19:47Z-square-mercury-neptune",
       "ut": "2026-12-26T19:47Z",
       "type": "square",
@@ -308,6 +610,31 @@
       ],
       "description": "Mercury (Capricorn 1°40') square Neptune (Aries 1°40'), exact 2026-12-26T19:47Z",
       "noon_orb": 0.509
+    },
+    {
+      "id": "2026-12-28T02:18Z-square-moon-uranus",
+      "ut": "2026-12-28T02:18Z",
+      "type": "square",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Virgo",
+          "lon": 152.4257,
+          "position": "Virgo 2°26'"
+        },
+        {
+          "body": "uranus",
+          "sign": "Gemini",
+          "lon": 62.4257,
+          "position": "Gemini 2°26'"
+        }
+      ],
+      "lands_in_signs": [
+        "Gemini",
+        "Virgo"
+      ],
+      "description": "Moon (Virgo 2°26') square Uranus (Gemini 2°26'), exact 2026-12-28T02:18Z",
+      "fallback": true
     },
     {
       "id": "2026-12-29T23:28Z-square-sun-saturn",
@@ -335,6 +662,31 @@
       "noon_orb": 0.471
     },
     {
+      "id": "2026-12-30T17:31Z-opposition-moon-saturn",
+      "ut": "2026-12-30T17:31Z",
+      "type": "opposition",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Libra",
+          "lon": 188.2855,
+          "position": "Libra 8°17'"
+        },
+        {
+          "body": "saturn",
+          "sign": "Aries",
+          "lon": 8.2855,
+          "position": "Aries 8°17'"
+        }
+      ],
+      "lands_in_signs": [
+        "Aries",
+        "Libra"
+      ],
+      "description": "Moon (Libra 8°17') opposition Saturn (Aries 8°17'), exact 2026-12-30T17:31Z",
+      "fallback": true
+    },
+    {
       "id": "2026-12-30T23:55Z-square-mercury-saturn",
       "ut": "2026-12-30T23:55Z",
       "type": "square",
@@ -360,6 +712,31 @@
       "noon_orb": 0.775
     },
     {
+      "id": "2027-01-01T18:40Z-square-moon-pluto",
+      "ut": "2027-01-01T18:40Z",
+      "type": "square",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Scorpio",
+          "lon": 214.3745,
+          "position": "Scorpio 4°22'"
+        },
+        {
+          "body": "pluto",
+          "sign": "Aquarius",
+          "lon": 304.3745,
+          "position": "Aquarius 4°22'"
+        }
+      ],
+      "lands_in_signs": [
+        "Scorpio",
+        "Aquarius"
+      ],
+      "description": "Moon (Scorpio 4°22') square Pluto (Aquarius 4°22'), exact 2027-01-01T18:40Z",
+      "fallback": true
+    },
+    {
       "id": "2027-01-03T17:56Z-square-venus-jupiter",
       "ut": "2027-01-03T17:56Z",
       "type": "square",
@@ -383,6 +760,56 @@
       ],
       "description": "Venus (Scorpio 26°16') square Jupiter (Leo 26°16'), exact 2027-01-03T17:56Z",
       "noon_orb": 0.268
+    },
+    {
+      "id": "2027-01-04T01:21Z-opposition-moon-uranus",
+      "ut": "2027-01-04T01:21Z",
+      "type": "opposition",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Sagittarius",
+          "lon": 242.2121,
+          "position": "Sagittarius 2°13'"
+        },
+        {
+          "body": "uranus",
+          "sign": "Gemini",
+          "lon": 62.2121,
+          "position": "Gemini 2°13'"
+        }
+      ],
+      "lands_in_signs": [
+        "Gemini",
+        "Sagittarius"
+      ],
+      "description": "Moon (Sagittarius 2°13') opposition Uranus (Gemini 2°13'), exact 2027-01-04T01:21Z",
+      "fallback": true
+    },
+    {
+      "id": "2027-01-07T02:43Z-square-moon-saturn",
+      "ut": "2027-01-07T02:43Z",
+      "type": "square",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Capricorn",
+          "lon": 278.5952,
+          "position": "Capricorn 8°36'"
+        },
+        {
+          "body": "saturn",
+          "sign": "Aries",
+          "lon": 8.5952,
+          "position": "Aries 8°36'"
+        }
+      ],
+      "lands_in_signs": [
+        "Aries",
+        "Capricorn"
+      ],
+      "description": "Moon (Capricorn 8°36') square Saturn (Aries 8°36'), exact 2027-01-07T02:43Z",
+      "fallback": true
     },
     {
       "id": "2027-01-07T20:24Z-new_moon-sun-moon",
@@ -433,6 +860,56 @@
       "noon_orb": 0.165
     },
     {
+      "id": "2027-01-11T14:37Z-square-moon-uranus",
+      "ut": "2027-01-11T14:37Z",
+      "type": "square",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Pisces",
+          "lon": 332.0163,
+          "position": "Pisces 2°01'"
+        },
+        {
+          "body": "uranus",
+          "sign": "Gemini",
+          "lon": 62.0163,
+          "position": "Gemini 2°01'"
+        }
+      ],
+      "lands_in_signs": [
+        "Gemini",
+        "Pisces"
+      ],
+      "description": "Moon (Pisces 2°01') square Uranus (Gemini 2°01'), exact 2027-01-11T14:37Z",
+      "fallback": true
+    },
+    {
+      "id": "2027-01-16T13:19Z-square-moon-pluto",
+      "ut": "2027-01-16T13:19Z",
+      "type": "square",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Taurus",
+          "lon": 34.8288,
+          "position": "Taurus 4°50'"
+        },
+        {
+          "body": "pluto",
+          "sign": "Aquarius",
+          "lon": 304.8288,
+          "position": "Aquarius 4°50'"
+        }
+      ],
+      "lands_in_signs": [
+        "Taurus",
+        "Aquarius"
+      ],
+      "description": "Moon (Taurus 4°50') square Pluto (Aquarius 4°50'), exact 2027-01-16T13:19Z",
+      "fallback": true
+    },
+    {
       "id": "2027-01-16T21:38Z-square-venus-mars",
       "ut": "2027-01-16T21:38Z",
       "type": "square",
@@ -458,6 +935,31 @@
       "noon_orb": 0.469
     },
     {
+      "id": "2027-01-21T00:18Z-square-moon-saturn",
+      "ut": "2027-01-21T00:18Z",
+      "type": "square",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Cancer",
+          "lon": 99.42,
+          "position": "Cancer 9°25'"
+        },
+        {
+          "body": "saturn",
+          "sign": "Aries",
+          "lon": 9.42,
+          "position": "Aries 9°25'"
+        }
+      ],
+      "lands_in_signs": [
+        "Aries",
+        "Cancer"
+      ],
+      "description": "Moon (Cancer 9°25') square Saturn (Aries 9°25'), exact 2027-01-21T00:18Z",
+      "fallback": true
+    },
+    {
       "id": "2027-01-22T12:17Z-full_moon-sun-moon",
       "ut": "2027-01-22T12:17Z",
       "type": "full_moon",
@@ -480,6 +982,81 @@
         "Aquarius"
       ],
       "description": "Full Moon: Moon Leo 2°14', Sun Aquarius 2°14', exact 2027-01-22T12:17Z"
+    },
+    {
+      "id": "2027-01-22T16:42Z-opposition-moon-pluto",
+      "ut": "2027-01-22T16:42Z",
+      "type": "opposition",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Leo",
+          "lon": 125.0235,
+          "position": "Leo 5°01'"
+        },
+        {
+          "body": "pluto",
+          "sign": "Aquarius",
+          "lon": 305.0235,
+          "position": "Aquarius 5°01'"
+        }
+      ],
+      "lands_in_signs": [
+        "Leo",
+        "Aquarius"
+      ],
+      "description": "Moon (Leo 5°01') opposition Pluto (Aquarius 5°01'), exact 2027-01-22T16:42Z",
+      "fallback": true
+    },
+    {
+      "id": "2027-01-24T11:40Z-square-moon-uranus",
+      "ut": "2027-01-24T11:40Z",
+      "type": "square",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Virgo",
+          "lon": 151.7816,
+          "position": "Virgo 1°47'"
+        },
+        {
+          "body": "uranus",
+          "sign": "Gemini",
+          "lon": 61.7816,
+          "position": "Gemini 1°47'"
+        }
+      ],
+      "lands_in_signs": [
+        "Gemini",
+        "Virgo"
+      ],
+      "description": "Moon (Virgo 1°47') square Uranus (Gemini 1°47'), exact 2027-01-24T11:40Z",
+      "fallback": true
+    },
+    {
+      "id": "2027-01-27T04:36Z-opposition-moon-saturn",
+      "ut": "2027-01-27T04:36Z",
+      "type": "opposition",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Libra",
+          "lon": 189.8792,
+          "position": "Libra 9°53'"
+        },
+        {
+          "body": "saturn",
+          "sign": "Aries",
+          "lon": 9.8792,
+          "position": "Aries 9°53'"
+        }
+      ],
+      "lands_in_signs": [
+        "Aries",
+        "Libra"
+      ],
+      "description": "Moon (Libra 9°53') opposition Saturn (Aries 9°53'), exact 2027-01-27T04:36Z",
+      "fallback": true
     },
     {
       "id": "2027-01-27T16:37Z-opposition-mercury-jupiter",
@@ -507,6 +1084,56 @@
       "noon_orb": 0.318
     },
     {
+      "id": "2027-01-29T03:12Z-square-moon-pluto",
+      "ut": "2027-01-29T03:12Z",
+      "type": "square",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Scorpio",
+          "lon": 215.228,
+          "position": "Scorpio 5°14'"
+        },
+        {
+          "body": "pluto",
+          "sign": "Aquarius",
+          "lon": 305.228,
+          "position": "Aquarius 5°14'"
+        }
+      ],
+      "lands_in_signs": [
+        "Scorpio",
+        "Aquarius"
+      ],
+      "description": "Moon (Scorpio 5°14') square Pluto (Aquarius 5°14'), exact 2027-01-29T03:12Z",
+      "fallback": true
+    },
+    {
+      "id": "2027-01-31T06:37Z-opposition-moon-uranus",
+      "ut": "2027-01-31T06:37Z",
+      "type": "opposition",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Sagittarius",
+          "lon": 241.7125,
+          "position": "Sagittarius 1°43'"
+        },
+        {
+          "body": "uranus",
+          "sign": "Gemini",
+          "lon": 61.7125,
+          "position": "Gemini 1°43'"
+        }
+      ],
+      "lands_in_signs": [
+        "Gemini",
+        "Sagittarius"
+      ],
+      "description": "Moon (Sagittarius 1°43') opposition Uranus (Gemini 1°43'), exact 2027-01-31T06:37Z",
+      "fallback": true
+    },
+    {
       "id": "2027-02-02T12:18Z-square-mercury-uranus",
       "ut": "2027-02-02T12:18Z",
       "type": "square",
@@ -530,6 +1157,31 @@
       ],
       "description": "Mercury (Pisces 1°42') square Uranus (Gemini 1°42'), exact 2027-02-02T12:18Z",
       "noon_orb": 0.014
+    },
+    {
+      "id": "2027-02-03T12:53Z-square-moon-saturn",
+      "ut": "2027-02-03T12:53Z",
+      "type": "square",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Capricorn",
+          "lon": 280.4917,
+          "position": "Capricorn 10°30'"
+        },
+        {
+          "body": "saturn",
+          "sign": "Aries",
+          "lon": 10.4917,
+          "position": "Aries 10°30'"
+        }
+      ],
+      "lands_in_signs": [
+        "Aries",
+        "Capricorn"
+      ],
+      "description": "Moon (Capricorn 10°30') square Saturn (Aries 10°30'), exact 2027-02-03T12:53Z",
+      "fallback": true
     },
     {
       "id": "2027-02-05T17:34Z-square-venus-neptune",
@@ -605,6 +1257,31 @@
       "noon_orb": 0.149
     },
     {
+      "id": "2027-02-07T19:51Z-square-moon-uranus",
+      "ut": "2027-02-07T19:51Z",
+      "type": "square",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Pisces",
+          "lon": 331.6828,
+          "position": "Pisces 1°41'"
+        },
+        {
+          "body": "uranus",
+          "sign": "Gemini",
+          "lon": 61.6828,
+          "position": "Gemini 1°41'"
+        }
+      ],
+      "lands_in_signs": [
+        "Gemini",
+        "Pisces"
+      ],
+      "description": "Moon (Pisces 1°41') square Uranus (Gemini 1°41'), exact 2027-02-07T19:51Z",
+      "fallback": true
+    },
+    {
       "id": "2027-02-11T00:29Z-opposition-sun-jupiter",
       "ut": "2027-02-11T00:29Z",
       "type": "opposition",
@@ -628,6 +1305,31 @@
       ],
       "description": "Sun (Aquarius 22°02') opposition Jupiter (Leo 22°02'), exact 2027-02-11T00:29Z",
       "noon_orb": 0.549
+    },
+    {
+      "id": "2027-02-12T21:03Z-square-moon-pluto",
+      "ut": "2027-02-12T21:03Z",
+      "type": "square",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Taurus",
+          "lon": 35.6891,
+          "position": "Taurus 5°41'"
+        },
+        {
+          "body": "pluto",
+          "sign": "Aquarius",
+          "lon": 305.6891,
+          "position": "Aquarius 5°41'"
+        }
+      ],
+      "lands_in_signs": [
+        "Taurus",
+        "Aquarius"
+      ],
+      "description": "Moon (Taurus 5°41') square Pluto (Aquarius 5°41'), exact 2027-02-12T21:03Z",
+      "fallback": true
     },
     {
       "id": "2027-02-13T11:40Z-square-venus-saturn",
@@ -730,6 +1432,56 @@
       "noon_orb": 0.092
     },
     {
+      "id": "2027-02-17T14:05Z-square-moon-saturn",
+      "ut": "2027-02-17T14:05Z",
+      "type": "square",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Cancer",
+          "lon": 101.8403,
+          "position": "Cancer 11°50'"
+        },
+        {
+          "body": "saturn",
+          "sign": "Aries",
+          "lon": 11.8403,
+          "position": "Aries 11°50'"
+        }
+      ],
+      "lands_in_signs": [
+        "Aries",
+        "Cancer"
+      ],
+      "description": "Moon (Cancer 11°50') square Saturn (Aries 11°50'), exact 2027-02-17T14:05Z",
+      "fallback": true
+    },
+    {
+      "id": "2027-02-19T05:00Z-opposition-moon-pluto",
+      "ut": "2027-02-19T05:00Z",
+      "type": "opposition",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Leo",
+          "lon": 125.8793,
+          "position": "Leo 5°53'"
+        },
+        {
+          "body": "pluto",
+          "sign": "Aquarius",
+          "lon": 305.8793,
+          "position": "Aquarius 5°53'"
+        }
+      ],
+      "lands_in_signs": [
+        "Leo",
+        "Aquarius"
+      ],
+      "description": "Moon (Leo 5°53') opposition Pluto (Aquarius 5°53'), exact 2027-02-19T05:00Z",
+      "fallback": true
+    },
+    {
       "id": "2027-02-19T15:51Z-opposition-sun-mars",
       "ut": "2027-02-19T15:51Z",
       "type": "opposition",
@@ -780,6 +1532,31 @@
       "noon_orb": 0.132
     },
     {
+      "id": "2027-02-20T22:50Z-square-moon-uranus",
+      "ut": "2027-02-20T22:50Z",
+      "type": "square",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Virgo",
+          "lon": 151.7516,
+          "position": "Virgo 1°45'"
+        },
+        {
+          "body": "uranus",
+          "sign": "Gemini",
+          "lon": 61.7516,
+          "position": "Gemini 1°45'"
+        }
+      ],
+      "lands_in_signs": [
+        "Gemini",
+        "Virgo"
+      ],
+      "description": "Moon (Virgo 1°45') square Uranus (Gemini 1°45'), exact 2027-02-20T22:50Z",
+      "fallback": true
+    },
+    {
       "id": "2027-02-20T23:24Z-full_moon-sun-moon",
       "ut": "2027-02-20T23:24Z",
       "type": "full_moon",
@@ -822,6 +1599,131 @@
       "from_sign": "Virgo",
       "to_sign": "Leo",
       "retrograde": true
+    },
+    {
+      "id": "2027-02-23T19:15Z-opposition-moon-saturn",
+      "ut": "2027-02-23T19:15Z",
+      "type": "opposition",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Libra",
+          "lon": 192.4993,
+          "position": "Libra 12°30'"
+        },
+        {
+          "body": "saturn",
+          "sign": "Aries",
+          "lon": 12.4993,
+          "position": "Aries 12°30'"
+        }
+      ],
+      "lands_in_signs": [
+        "Aries",
+        "Libra"
+      ],
+      "description": "Moon (Libra 12°30') opposition Saturn (Aries 12°30'), exact 2027-02-23T19:15Z",
+      "fallback": true
+    },
+    {
+      "id": "2027-02-25T13:30Z-square-moon-pluto",
+      "ut": "2027-02-25T13:30Z",
+      "type": "square",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Scorpio",
+          "lon": 216.0623,
+          "position": "Scorpio 6°04'"
+        },
+        {
+          "body": "pluto",
+          "sign": "Aquarius",
+          "lon": 306.0623,
+          "position": "Aquarius 6°04'"
+        }
+      ],
+      "lands_in_signs": [
+        "Scorpio",
+        "Aquarius"
+      ],
+      "description": "Moon (Scorpio 6°04') square Pluto (Aquarius 6°04'), exact 2027-02-25T13:30Z",
+      "fallback": true
+    },
+    {
+      "id": "2027-02-27T14:28Z-opposition-moon-uranus",
+      "ut": "2027-02-27T14:28Z",
+      "type": "opposition",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Sagittarius",
+          "lon": 241.8439,
+          "position": "Sagittarius 1°51'"
+        },
+        {
+          "body": "uranus",
+          "sign": "Gemini",
+          "lon": 61.8439,
+          "position": "Gemini 1°51'"
+        }
+      ],
+      "lands_in_signs": [
+        "Gemini",
+        "Sagittarius"
+      ],
+      "description": "Moon (Sagittarius 1°51') opposition Uranus (Gemini 1°51'), exact 2027-02-27T14:28Z",
+      "fallback": true
+    },
+    {
+      "id": "2027-03-03T01:37Z-square-moon-saturn",
+      "ut": "2027-03-03T01:37Z",
+      "type": "square",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Capricorn",
+          "lon": 283.3096,
+          "position": "Capricorn 13°19'"
+        },
+        {
+          "body": "saturn",
+          "sign": "Aries",
+          "lon": 13.3096,
+          "position": "Aries 13°19'"
+        }
+      ],
+      "lands_in_signs": [
+        "Aries",
+        "Capricorn"
+      ],
+      "description": "Moon (Capricorn 13°19') square Saturn (Aries 13°19'), exact 2027-03-03T01:37Z",
+      "fallback": true
+    },
+    {
+      "id": "2027-03-07T03:20Z-square-moon-uranus",
+      "ut": "2027-03-07T03:20Z",
+      "type": "square",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Pisces",
+          "lon": 331.994,
+          "position": "Pisces 2°00'"
+        },
+        {
+          "body": "uranus",
+          "sign": "Gemini",
+          "lon": 61.994,
+          "position": "Gemini 2°00'"
+        }
+      ],
+      "lands_in_signs": [
+        "Gemini",
+        "Pisces"
+      ],
+      "description": "Moon (Pisces 2°00') square Uranus (Gemini 2°00'), exact 2027-03-07T03:20Z",
+      "fallback": true
     },
     {
       "id": "2027-03-08T09:29Z-new_moon-sun-moon",
@@ -872,6 +1774,31 @@
       "noon_orb": 0.138
     },
     {
+      "id": "2027-03-12T03:52Z-square-moon-pluto",
+      "ut": "2027-03-12T03:52Z",
+      "type": "square",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Taurus",
+          "lon": 36.4458,
+          "position": "Taurus 6°27'"
+        },
+        {
+          "body": "pluto",
+          "sign": "Aquarius",
+          "lon": 306.4458,
+          "position": "Aquarius 6°27'"
+        }
+      ],
+      "lands_in_signs": [
+        "Taurus",
+        "Aquarius"
+      ],
+      "description": "Moon (Taurus 6°27') square Pluto (Aquarius 6°27'), exact 2027-03-12T03:52Z",
+      "fallback": true
+    },
+    {
       "id": "2027-03-16T12:05Z-opposition-venus-jupiter",
       "ut": "2027-03-16T12:05Z",
       "type": "opposition",
@@ -897,6 +1824,56 @@
       "noon_orb": 0.004
     },
     {
+      "id": "2027-03-17T02:30Z-square-moon-saturn",
+      "ut": "2027-03-17T02:30Z",
+      "type": "square",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Cancer",
+          "lon": 104.9709,
+          "position": "Cancer 14°58'"
+        },
+        {
+          "body": "saturn",
+          "sign": "Aries",
+          "lon": 14.9709,
+          "position": "Aries 14°58'"
+        }
+      ],
+      "lands_in_signs": [
+        "Aries",
+        "Cancer"
+      ],
+      "description": "Moon (Cancer 14°58') square Saturn (Aries 14°58'), exact 2027-03-17T02:30Z",
+      "fallback": true
+    },
+    {
+      "id": "2027-03-18T14:40Z-opposition-moon-pluto",
+      "ut": "2027-03-18T14:40Z",
+      "type": "opposition",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Leo",
+          "lon": 126.5948,
+          "position": "Leo 6°36'"
+        },
+        {
+          "body": "pluto",
+          "sign": "Aquarius",
+          "lon": 306.5948,
+          "position": "Aquarius 6°36'"
+        }
+      ],
+      "lands_in_signs": [
+        "Leo",
+        "Aquarius"
+      ],
+      "description": "Moon (Leo 6°36') opposition Pluto (Aquarius 6°36'), exact 2027-03-18T14:40Z",
+      "fallback": true
+    },
+    {
       "id": "2027-03-19T16:14Z-opposition-venus-mars",
       "ut": "2027-03-19T16:14Z",
       "type": "opposition",
@@ -920,6 +1897,31 @@
       ],
       "description": "Venus (Aquarius 21°59') opposition Mars (Leo 21°59'), exact 2027-03-19T16:14Z",
       "noon_orb": 0.241
+    },
+    {
+      "id": "2027-03-20T09:34Z-square-moon-uranus",
+      "ut": "2027-03-20T09:34Z",
+      "type": "square",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Virgo",
+          "lon": 152.3683,
+          "position": "Virgo 2°22'"
+        },
+        {
+          "body": "uranus",
+          "sign": "Gemini",
+          "lon": 62.3683,
+          "position": "Gemini 2°22'"
+        }
+      ],
+      "lands_in_signs": [
+        "Gemini",
+        "Virgo"
+      ],
+      "description": "Moon (Virgo 2°22') square Uranus (Gemini 2°22'), exact 2027-03-20T09:34Z",
+      "fallback": true
     },
     {
       "id": "2027-03-20T14:10Z-square-mercury-uranus",
@@ -971,6 +1973,81 @@
       "description": "Full Moon: Moon Libra 1°35', Sun Aries 1°35', exact 2027-03-22T10:44Z"
     },
     {
+      "id": "2027-03-23T11:09Z-opposition-moon-saturn",
+      "ut": "2027-03-23T11:09Z",
+      "type": "opposition",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Libra",
+          "lon": 195.7531,
+          "position": "Libra 15°45'"
+        },
+        {
+          "body": "saturn",
+          "sign": "Aries",
+          "lon": 15.753,
+          "position": "Aries 15°45'"
+        }
+      ],
+      "lands_in_signs": [
+        "Aries",
+        "Libra"
+      ],
+      "description": "Moon (Libra 15°45') opposition Saturn (Aries 15°45'), exact 2027-03-23T11:09Z",
+      "fallback": true
+    },
+    {
+      "id": "2027-03-25T00:26Z-square-moon-pluto",
+      "ut": "2027-03-25T00:26Z",
+      "type": "square",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Scorpio",
+          "lon": 216.7281,
+          "position": "Scorpio 6°44'"
+        },
+        {
+          "body": "pluto",
+          "sign": "Aquarius",
+          "lon": 306.7281,
+          "position": "Aquarius 6°44'"
+        }
+      ],
+      "lands_in_signs": [
+        "Scorpio",
+        "Aquarius"
+      ],
+      "description": "Moon (Scorpio 6°44') square Pluto (Aquarius 6°44'), exact 2027-03-25T00:26Z",
+      "fallback": true
+    },
+    {
+      "id": "2027-03-27T00:42Z-opposition-moon-uranus",
+      "ut": "2027-03-27T00:42Z",
+      "type": "opposition",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Sagittarius",
+          "lon": 242.6035,
+          "position": "Sagittarius 2°36'"
+        },
+        {
+          "body": "uranus",
+          "sign": "Gemini",
+          "lon": 62.6035,
+          "position": "Gemini 2°36'"
+        }
+      ],
+      "lands_in_signs": [
+        "Gemini",
+        "Sagittarius"
+      ],
+      "description": "Moon (Sagittarius 2°36') opposition Uranus (Gemini 2°36'), exact 2027-03-27T00:42Z",
+      "fallback": true
+    },
+    {
       "id": "2027-03-28T13:18Z-square-venus-uranus",
       "ut": "2027-03-28T13:18Z",
       "type": "square",
@@ -996,6 +2073,56 @@
       "noon_orb": 0.063
     },
     {
+      "id": "2027-03-30T16:13Z-square-moon-saturn",
+      "ut": "2027-03-30T16:13Z",
+      "type": "square",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Capricorn",
+          "lon": 286.6536,
+          "position": "Capricorn 16°39'"
+        },
+        {
+          "body": "saturn",
+          "sign": "Aries",
+          "lon": 16.6536,
+          "position": "Aries 16°39'"
+        }
+      ],
+      "lands_in_signs": [
+        "Aries",
+        "Capricorn"
+      ],
+      "description": "Moon (Capricorn 16°39') square Saturn (Aries 16°39'), exact 2027-03-30T16:13Z",
+      "fallback": true
+    },
+    {
+      "id": "2027-04-03T13:07Z-square-moon-uranus",
+      "ut": "2027-04-03T13:07Z",
+      "type": "square",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Pisces",
+          "lon": 332.9052,
+          "position": "Pisces 2°54'"
+        },
+        {
+          "body": "uranus",
+          "sign": "Gemini",
+          "lon": 62.9052,
+          "position": "Gemini 2°54'"
+        }
+      ],
+      "lands_in_signs": [
+        "Gemini",
+        "Pisces"
+      ],
+      "description": "Moon (Pisces 2°54') square Uranus (Gemini 2°54'), exact 2027-04-03T13:07Z",
+      "fallback": true
+    },
+    {
       "id": "2027-04-06T23:51Z-new_moon-sun-moon",
       "ut": "2027-04-06T23:51Z",
       "type": "new_moon",
@@ -1017,6 +2144,131 @@
         "Aries"
       ],
       "description": "New Moon in Aries 16°57', exact 2027-04-06T23:51Z"
+    },
+    {
+      "id": "2027-04-08T11:26Z-square-moon-pluto",
+      "ut": "2027-04-08T11:26Z",
+      "type": "square",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Taurus",
+          "lon": 36.9701,
+          "position": "Taurus 6°58'"
+        },
+        {
+          "body": "pluto",
+          "sign": "Aquarius",
+          "lon": 306.9701,
+          "position": "Aquarius 6°58'"
+        }
+      ],
+      "lands_in_signs": [
+        "Taurus",
+        "Aquarius"
+      ],
+      "description": "Moon (Taurus 6°58') square Pluto (Aquarius 6°58'), exact 2027-04-08T11:26Z",
+      "fallback": true
+    },
+    {
+      "id": "2027-04-13T13:48Z-square-moon-saturn",
+      "ut": "2027-04-13T13:48Z",
+      "type": "square",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Cancer",
+          "lon": 108.406,
+          "position": "Cancer 18°24'"
+        },
+        {
+          "body": "saturn",
+          "sign": "Aries",
+          "lon": 18.406,
+          "position": "Aries 18°24'"
+        }
+      ],
+      "lands_in_signs": [
+        "Aries",
+        "Cancer"
+      ],
+      "description": "Moon (Cancer 18°24') square Saturn (Aries 18°24'), exact 2027-04-13T13:48Z",
+      "fallback": true
+    },
+    {
+      "id": "2027-04-14T21:30Z-opposition-moon-pluto",
+      "ut": "2027-04-14T21:30Z",
+      "type": "opposition",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Leo",
+          "lon": 127.0492,
+          "position": "Leo 7°03'"
+        },
+        {
+          "body": "pluto",
+          "sign": "Aquarius",
+          "lon": 307.0492,
+          "position": "Aquarius 7°03'"
+        }
+      ],
+      "lands_in_signs": [
+        "Leo",
+        "Aquarius"
+      ],
+      "description": "Moon (Leo 7°03') opposition Pluto (Aquarius 7°03'), exact 2027-04-14T21:30Z",
+      "fallback": true
+    },
+    {
+      "id": "2027-04-16T18:41Z-square-moon-uranus",
+      "ut": "2027-04-16T18:41Z",
+      "type": "square",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Virgo",
+          "lon": 153.5147,
+          "position": "Virgo 3°31'"
+        },
+        {
+          "body": "uranus",
+          "sign": "Gemini",
+          "lon": 63.5147,
+          "position": "Gemini 3°31'"
+        }
+      ],
+      "lands_in_signs": [
+        "Gemini",
+        "Virgo"
+      ],
+      "description": "Moon (Virgo 3°31') square Uranus (Gemini 3°31'), exact 2027-04-16T18:41Z",
+      "fallback": true
+    },
+    {
+      "id": "2027-04-20T02:06Z-opposition-moon-saturn",
+      "ut": "2027-04-20T02:06Z",
+      "type": "opposition",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Libra",
+          "lon": 199.2228,
+          "position": "Libra 19°13'"
+        },
+        {
+          "body": "saturn",
+          "sign": "Aries",
+          "lon": 19.2228,
+          "position": "Aries 19°13'"
+        }
+      ],
+      "lands_in_signs": [
+        "Aries",
+        "Libra"
+      ],
+      "description": "Moon (Libra 19°13') opposition Saturn (Aries 19°13'), exact 2027-04-20T02:06Z",
+      "fallback": true
     },
     {
       "id": "2027-04-20T22:27Z-full_moon-sun-moon",
@@ -1041,6 +2293,81 @@
         "Scorpio"
       ],
       "description": "Full Moon: Moon Scorpio 0°37', Sun Taurus 0°37', exact 2027-04-20T22:27Z"
+    },
+    {
+      "id": "2027-04-21T10:12Z-square-moon-pluto",
+      "ut": "2027-04-21T10:12Z",
+      "type": "square",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Scorpio",
+          "lon": 217.1104,
+          "position": "Scorpio 7°07'"
+        },
+        {
+          "body": "pluto",
+          "sign": "Aquarius",
+          "lon": 307.1104,
+          "position": "Aquarius 7°07'"
+        }
+      ],
+      "lands_in_signs": [
+        "Scorpio",
+        "Aquarius"
+      ],
+      "description": "Moon (Scorpio 7°07') square Pluto (Aquarius 7°07'), exact 2027-04-21T10:12Z",
+      "fallback": true
+    },
+    {
+      "id": "2027-04-23T11:56Z-opposition-moon-uranus",
+      "ut": "2027-04-23T11:56Z",
+      "type": "opposition",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Sagittarius",
+          "lon": 243.8558,
+          "position": "Sagittarius 3°51'"
+        },
+        {
+          "body": "uranus",
+          "sign": "Gemini",
+          "lon": 63.8557,
+          "position": "Gemini 3°51'"
+        }
+      ],
+      "lands_in_signs": [
+        "Gemini",
+        "Sagittarius"
+      ],
+      "description": "Moon (Sagittarius 3°51') opposition Uranus (Gemini 3°51'), exact 2027-04-23T11:56Z",
+      "fallback": true
+    },
+    {
+      "id": "2027-04-27T07:19Z-square-moon-saturn",
+      "ut": "2027-04-27T07:19Z",
+      "type": "square",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Capricorn",
+          "lon": 290.1169,
+          "position": "Capricorn 20°07'"
+        },
+        {
+          "body": "saturn",
+          "sign": "Aries",
+          "lon": 20.1169,
+          "position": "Aries 20°07'"
+        }
+      ],
+      "lands_in_signs": [
+        "Aries",
+        "Capricorn"
+      ],
+      "description": "Moon (Capricorn 20°07') square Saturn (Aries 20°07'), exact 2027-04-27T07:19Z",
+      "fallback": true
     },
     {
       "id": "2027-04-27T15:25Z-square-sun-pluto",
@@ -1093,6 +2420,31 @@
       "noon_orb": 0.375
     },
     {
+      "id": "2027-05-01T00:17Z-square-moon-uranus",
+      "ut": "2027-05-01T00:17Z",
+      "type": "square",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Pisces",
+          "lon": 334.2575,
+          "position": "Pisces 4°15'"
+        },
+        {
+          "body": "uranus",
+          "sign": "Gemini",
+          "lon": 64.2575,
+          "position": "Gemini 4°15'"
+        }
+      ],
+      "lands_in_signs": [
+        "Gemini",
+        "Pisces"
+      ],
+      "description": "Moon (Pisces 4°15') square Uranus (Gemini 4°15'), exact 2027-05-01T00:17Z",
+      "fallback": true
+    },
+    {
       "id": "2027-05-03T04:28Z-square-mercury-jupiter",
       "ut": "2027-05-03T04:28Z",
       "type": "square",
@@ -1116,6 +2468,31 @@
       ],
       "description": "Mercury (Taurus 17°37') square Jupiter (Leo 17°37'), exact 2027-05-03T04:28Z",
       "noon_orb": 0.656
+    },
+    {
+      "id": "2027-05-05T20:21Z-square-moon-pluto",
+      "ut": "2027-05-05T20:21Z",
+      "type": "square",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Taurus",
+          "lon": 37.1763,
+          "position": "Taurus 7°11'"
+        },
+        {
+          "body": "pluto",
+          "sign": "Aquarius",
+          "lon": 307.1763,
+          "position": "Aquarius 7°11'"
+        }
+      ],
+      "lands_in_signs": [
+        "Taurus",
+        "Aquarius"
+      ],
+      "description": "Moon (Taurus 7°11') square Pluto (Aquarius 7°11'), exact 2027-05-05T20:21Z",
+      "fallback": true
     },
     {
       "id": "2027-05-06T10:59Z-new_moon-sun-moon",
@@ -1191,6 +2568,81 @@
       "noon_orb": 0.284
     },
     {
+      "id": "2027-05-11T01:12Z-square-moon-saturn",
+      "ut": "2027-05-11T01:12Z",
+      "type": "square",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Cancer",
+          "lon": 111.7642,
+          "position": "Cancer 21°46'"
+        },
+        {
+          "body": "saturn",
+          "sign": "Aries",
+          "lon": 21.7642,
+          "position": "Aries 21°46'"
+        }
+      ],
+      "lands_in_signs": [
+        "Aries",
+        "Cancer"
+      ],
+      "description": "Moon (Cancer 21°46') square Saturn (Aries 21°46'), exact 2027-05-11T01:12Z",
+      "fallback": true
+    },
+    {
+      "id": "2027-05-12T03:07Z-opposition-moon-pluto",
+      "ut": "2027-05-12T03:07Z",
+      "type": "opposition",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Leo",
+          "lon": 127.175,
+          "position": "Leo 7°10'"
+        },
+        {
+          "body": "pluto",
+          "sign": "Aquarius",
+          "lon": 307.175,
+          "position": "Aquarius 7°10'"
+        }
+      ],
+      "lands_in_signs": [
+        "Leo",
+        "Aquarius"
+      ],
+      "description": "Moon (Leo 7°10') opposition Pluto (Aquarius 7°10'), exact 2027-05-12T03:07Z",
+      "fallback": true
+    },
+    {
+      "id": "2027-05-14T02:44Z-square-moon-uranus",
+      "ut": "2027-05-14T02:44Z",
+      "type": "square",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Virgo",
+          "lon": 154.9956,
+          "position": "Virgo 5°00'"
+        },
+        {
+          "body": "uranus",
+          "sign": "Gemini",
+          "lon": 64.9956,
+          "position": "Gemini 5°00'"
+        }
+      ],
+      "lands_in_signs": [
+        "Gemini",
+        "Virgo"
+      ],
+      "description": "Moon (Virgo 5°00') square Uranus (Gemini 5°00'), exact 2027-05-14T02:44Z",
+      "fallback": true
+    },
+    {
       "id": "2027-05-14T14:48Z-ingress-mars",
       "ut": "2027-05-14T14:48Z",
       "type": "ingress",
@@ -1209,6 +2661,56 @@
       "from_sign": "Leo",
       "to_sign": "Virgo",
       "retrograde": false
+    },
+    {
+      "id": "2027-05-17T14:55Z-opposition-moon-saturn",
+      "ut": "2027-05-17T14:55Z",
+      "type": "opposition",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Libra",
+          "lon": 202.5147,
+          "position": "Libra 22°31'"
+        },
+        {
+          "body": "saturn",
+          "sign": "Aries",
+          "lon": 22.5147,
+          "position": "Aries 22°31'"
+        }
+      ],
+      "lands_in_signs": [
+        "Aries",
+        "Libra"
+      ],
+      "description": "Moon (Libra 22°31') opposition Saturn (Aries 22°31'), exact 2027-05-17T14:55Z",
+      "fallback": true
+    },
+    {
+      "id": "2027-05-18T17:41Z-square-moon-pluto",
+      "ut": "2027-05-18T17:41Z",
+      "type": "square",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Scorpio",
+          "lon": 217.1538,
+          "position": "Scorpio 7°09'"
+        },
+        {
+          "body": "pluto",
+          "sign": "Aquarius",
+          "lon": 307.1538,
+          "position": "Aquarius 7°09'"
+        }
+      ],
+      "lands_in_signs": [
+        "Scorpio",
+        "Aquarius"
+      ],
+      "description": "Moon (Scorpio 7°09') square Pluto (Aquarius 7°09'), exact 2027-05-18T17:41Z",
+      "fallback": true
     },
     {
       "id": "2027-05-20T10:59Z-full_moon-sun-moon",
@@ -1260,6 +2762,56 @@
       "noon_orb": 0.308
     },
     {
+      "id": "2027-05-20T22:45Z-opposition-moon-uranus",
+      "ut": "2027-05-20T22:45Z",
+      "type": "opposition",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Sagittarius",
+          "lon": 245.392,
+          "position": "Sagittarius 5°24'"
+        },
+        {
+          "body": "uranus",
+          "sign": "Gemini",
+          "lon": 65.392,
+          "position": "Gemini 5°24'"
+        }
+      ],
+      "lands_in_signs": [
+        "Gemini",
+        "Sagittarius"
+      ],
+      "description": "Moon (Sagittarius 5°24') opposition Uranus (Gemini 5°24'), exact 2027-05-20T22:45Z",
+      "fallback": true
+    },
+    {
+      "id": "2027-05-24T21:30Z-square-moon-saturn",
+      "ut": "2027-05-24T21:30Z",
+      "type": "square",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Capricorn",
+          "lon": 293.3101,
+          "position": "Capricorn 23°19'"
+        },
+        {
+          "body": "saturn",
+          "sign": "Aries",
+          "lon": 23.3101,
+          "position": "Aries 23°19'"
+        }
+      ],
+      "lands_in_signs": [
+        "Aries",
+        "Capricorn"
+      ],
+      "description": "Moon (Capricorn 23°19') square Saturn (Aries 23°19'), exact 2027-05-24T21:30Z",
+      "fallback": true
+    },
+    {
       "id": "2027-05-25T23:14Z-square-sun-mars",
       "ut": "2027-05-25T23:14Z",
       "type": "square",
@@ -1283,6 +2835,31 @@
       ],
       "description": "Sun (Gemini 4°31') square Mars (Virgo 4°31'), exact 2027-05-25T23:14Z",
       "noon_orb": 0.251
+    },
+    {
+      "id": "2027-05-28T11:35Z-square-moon-uranus",
+      "ut": "2027-05-28T11:35Z",
+      "type": "square",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Pisces",
+          "lon": 335.833,
+          "position": "Pisces 5°50'"
+        },
+        {
+          "body": "uranus",
+          "sign": "Gemini",
+          "lon": 65.833,
+          "position": "Gemini 5°50'"
+        }
+      ],
+      "lands_in_signs": [
+        "Gemini",
+        "Pisces"
+      ],
+      "description": "Moon (Pisces 5°50') square Uranus (Gemini 5°50'), exact 2027-05-28T11:35Z",
+      "fallback": true
     },
     {
       "id": "2027-05-29T02:14Z-square-mars-uranus",
@@ -1335,6 +2912,31 @@
       "noon_orb": 0.126
     },
     {
+      "id": "2027-06-02T05:51Z-square-moon-pluto",
+      "ut": "2027-06-02T05:51Z",
+      "type": "square",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Taurus",
+          "lon": 37.0408,
+          "position": "Taurus 7°02'"
+        },
+        {
+          "body": "pluto",
+          "sign": "Aquarius",
+          "lon": 307.0408,
+          "position": "Aquarius 7°02'"
+        }
+      ],
+      "lands_in_signs": [
+        "Taurus",
+        "Aquarius"
+      ],
+      "description": "Moon (Taurus 7°02') square Pluto (Aquarius 7°02'), exact 2027-06-02T05:51Z",
+      "fallback": true
+    },
+    {
       "id": "2027-06-04T19:40Z-new_moon-sun-moon",
       "ut": "2027-06-04T19:40Z",
       "type": "new_moon",
@@ -1356,6 +2958,156 @@
         "Gemini"
       ],
       "description": "New Moon in Gemini 13°58', exact 2027-06-04T19:40Z"
+    },
+    {
+      "id": "2027-06-07T13:33Z-square-moon-saturn",
+      "ut": "2027-06-07T13:33Z",
+      "type": "square",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Cancer",
+          "lon": 114.6816,
+          "position": "Cancer 24°41'"
+        },
+        {
+          "body": "saturn",
+          "sign": "Aries",
+          "lon": 24.6816,
+          "position": "Aries 24°41'"
+        }
+      ],
+      "lands_in_signs": [
+        "Aries",
+        "Cancer"
+      ],
+      "description": "Moon (Cancer 24°41') square Saturn (Aries 24°41'), exact 2027-06-07T13:33Z",
+      "fallback": true
+    },
+    {
+      "id": "2027-06-08T09:37Z-opposition-moon-pluto",
+      "ut": "2027-06-08T09:37Z",
+      "type": "opposition",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Leo",
+          "lon": 126.9672,
+          "position": "Leo 6°58'"
+        },
+        {
+          "body": "pluto",
+          "sign": "Aquarius",
+          "lon": 306.9672,
+          "position": "Aquarius 6°58'"
+        }
+      ],
+      "lands_in_signs": [
+        "Leo",
+        "Aquarius"
+      ],
+      "description": "Moon (Leo 6°58') opposition Pluto (Aquarius 6°58'), exact 2027-06-08T09:37Z",
+      "fallback": true
+    },
+    {
+      "id": "2027-06-10T11:13Z-square-moon-uranus",
+      "ut": "2027-06-10T11:13Z",
+      "type": "square",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Virgo",
+          "lon": 156.5892,
+          "position": "Virgo 6°35'"
+        },
+        {
+          "body": "uranus",
+          "sign": "Gemini",
+          "lon": 66.5892,
+          "position": "Gemini 6°35'"
+        }
+      ],
+      "lands_in_signs": [
+        "Gemini",
+        "Virgo"
+      ],
+      "description": "Moon (Virgo 6°35') square Uranus (Gemini 6°35'), exact 2027-06-10T11:13Z",
+      "fallback": true
+    },
+    {
+      "id": "2027-06-14T01:34Z-opposition-moon-saturn",
+      "ut": "2027-06-14T01:34Z",
+      "type": "opposition",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Libra",
+          "lon": 205.2669,
+          "position": "Libra 25°16'"
+        },
+        {
+          "body": "saturn",
+          "sign": "Aries",
+          "lon": 25.2669,
+          "position": "Aries 25°16'"
+        }
+      ],
+      "lands_in_signs": [
+        "Aries",
+        "Libra"
+      ],
+      "description": "Moon (Libra 25°16') opposition Saturn (Aries 25°16'), exact 2027-06-14T01:34Z",
+      "fallback": true
+    },
+    {
+      "id": "2027-06-14T23:04Z-square-moon-pluto",
+      "ut": "2027-06-14T23:04Z",
+      "type": "square",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Scorpio",
+          "lon": 216.873,
+          "position": "Scorpio 6°52'"
+        },
+        {
+          "body": "pluto",
+          "sign": "Aquarius",
+          "lon": 306.873,
+          "position": "Aquarius 6°52'"
+        }
+      ],
+      "lands_in_signs": [
+        "Scorpio",
+        "Aquarius"
+      ],
+      "description": "Moon (Scorpio 6°52') square Pluto (Aquarius 6°52'), exact 2027-06-14T23:04Z",
+      "fallback": true
+    },
+    {
+      "id": "2027-06-17T08:22Z-opposition-moon-uranus",
+      "ut": "2027-06-17T08:22Z",
+      "type": "opposition",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Sagittarius",
+          "lon": 246.9805,
+          "position": "Sagittarius 6°59'"
+        },
+        {
+          "body": "uranus",
+          "sign": "Gemini",
+          "lon": 66.9805,
+          "position": "Gemini 6°59'"
+        }
+      ],
+      "lands_in_signs": [
+        "Gemini",
+        "Sagittarius"
+      ],
+      "description": "Moon (Sagittarius 6°59') opposition Uranus (Gemini 6°59'), exact 2027-06-17T08:22Z",
+      "fallback": true
     },
     {
       "id": "2027-06-19T00:44Z-full_moon-sun-moon",
@@ -1380,6 +3132,31 @@
         "Sagittarius"
       ],
       "description": "Full Moon: Moon Sagittarius 27°33', Sun Gemini 27°33', exact 2027-06-19T00:44Z"
+    },
+    {
+      "id": "2027-06-21T09:37Z-square-moon-saturn",
+      "ut": "2027-06-21T09:37Z",
+      "type": "square",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Capricorn",
+          "lon": 295.8685,
+          "position": "Capricorn 25°52'"
+        },
+        {
+          "body": "saturn",
+          "sign": "Aries",
+          "lon": 25.8685,
+          "position": "Aries 25°52'"
+        }
+      ],
+      "lands_in_signs": [
+        "Aries",
+        "Capricorn"
+      ],
+      "description": "Moon (Capricorn 25°52') square Saturn (Aries 25°52'), exact 2027-06-21T09:37Z",
+      "fallback": true
     },
     {
       "id": "2027-06-23T06:29Z-square-venus-mars",
@@ -1407,6 +3184,31 @@
       "noon_orb": 0.161
     },
     {
+      "id": "2027-06-24T21:56Z-square-moon-uranus",
+      "ut": "2027-06-24T21:56Z",
+      "type": "square",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Pisces",
+          "lon": 337.3981,
+          "position": "Pisces 7°24'"
+        },
+        {
+          "body": "uranus",
+          "sign": "Gemini",
+          "lon": 67.3981,
+          "position": "Gemini 7°24'"
+        }
+      ],
+      "lands_in_signs": [
+        "Gemini",
+        "Pisces"
+      ],
+      "description": "Moon (Pisces 7°24') square Uranus (Gemini 7°24'), exact 2027-06-24T21:56Z",
+      "fallback": true
+    },
+    {
       "id": "2027-06-28T12:51Z-square-sun-neptune",
       "ut": "2027-06-28T12:51Z",
       "type": "square",
@@ -1432,6 +3234,31 @@
       "noon_orb": 0.033
     },
     {
+      "id": "2027-06-29T14:36Z-square-moon-pluto",
+      "ut": "2027-06-29T14:36Z",
+      "type": "square",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Taurus",
+          "lon": 36.6142,
+          "position": "Taurus 6°37'"
+        },
+        {
+          "body": "pluto",
+          "sign": "Aquarius",
+          "lon": 306.6142,
+          "position": "Aquarius 6°37'"
+        }
+      ],
+      "lands_in_signs": [
+        "Taurus",
+        "Aquarius"
+      ],
+      "description": "Moon (Taurus 6°37') square Pluto (Aquarius 6°37'), exact 2027-06-29T14:36Z",
+      "fallback": true
+    },
+    {
       "id": "2027-07-04T03:02Z-new_moon-sun-moon",
       "ut": "2027-07-04T03:02Z",
       "type": "new_moon",
@@ -1453,6 +3280,81 @@
         "Cancer"
       ],
       "description": "New Moon in Cancer 11°57', exact 2027-07-04T03:02Z"
+    },
+    {
+      "id": "2027-07-05T02:36Z-square-moon-saturn",
+      "ut": "2027-07-05T02:36Z",
+      "type": "square",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Cancer",
+          "lon": 116.8051,
+          "position": "Cancer 26°48'"
+        },
+        {
+          "body": "saturn",
+          "sign": "Aries",
+          "lon": 26.8051,
+          "position": "Aries 26°48'"
+        }
+      ],
+      "lands_in_signs": [
+        "Aries",
+        "Cancer"
+      ],
+      "description": "Moon (Cancer 26°48') square Saturn (Aries 26°48'), exact 2027-07-05T02:36Z",
+      "fallback": true
+    },
+    {
+      "id": "2027-07-05T18:00Z-opposition-moon-pluto",
+      "ut": "2027-07-05T18:00Z",
+      "type": "opposition",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Leo",
+          "lon": 126.4894,
+          "position": "Leo 6°29'"
+        },
+        {
+          "body": "pluto",
+          "sign": "Aquarius",
+          "lon": 306.4894,
+          "position": "Aquarius 6°29'"
+        }
+      ],
+      "lands_in_signs": [
+        "Leo",
+        "Aquarius"
+      ],
+      "description": "Moon (Leo 6°29') opposition Pluto (Aquarius 6°29'), exact 2027-07-05T18:00Z",
+      "fallback": true
+    },
+    {
+      "id": "2027-07-07T21:15Z-square-moon-uranus",
+      "ut": "2027-07-07T21:15Z",
+      "type": "square",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Virgo",
+          "lon": 158.0707,
+          "position": "Virgo 8°04'"
+        },
+        {
+          "body": "uranus",
+          "sign": "Gemini",
+          "lon": 68.0707,
+          "position": "Gemini 8°04'"
+        }
+      ],
+      "lands_in_signs": [
+        "Gemini",
+        "Virgo"
+      ],
+      "description": "Moon (Virgo 8°04') square Uranus (Gemini 8°04'), exact 2027-07-07T21:15Z",
+      "fallback": true
     },
     {
       "id": "2027-07-08T12:28Z-square-venus-neptune",
@@ -1478,6 +3380,81 @@
       ],
       "description": "Venus (Cancer 6°40') square Neptune (Aries 6°40'), exact 2027-07-08T12:28Z",
       "noon_orb": 0.024
+    },
+    {
+      "id": "2027-07-11T10:41Z-opposition-moon-saturn",
+      "ut": "2027-07-11T10:41Z",
+      "type": "opposition",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Libra",
+          "lon": 207.1465,
+          "position": "Libra 27°09'"
+        },
+        {
+          "body": "saturn",
+          "sign": "Aries",
+          "lon": 27.1465,
+          "position": "Aries 27°09'"
+        }
+      ],
+      "lands_in_signs": [
+        "Aries",
+        "Libra"
+      ],
+      "description": "Moon (Libra 27°09') opposition Saturn (Aries 27°09'), exact 2027-07-11T10:41Z",
+      "fallback": true
+    },
+    {
+      "id": "2027-07-12T03:39Z-square-moon-pluto",
+      "ut": "2027-07-12T03:39Z",
+      "type": "square",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Scorpio",
+          "lon": 216.3512,
+          "position": "Scorpio 6°21'"
+        },
+        {
+          "body": "pluto",
+          "sign": "Aquarius",
+          "lon": 306.3512,
+          "position": "Aquarius 6°21'"
+        }
+      ],
+      "lands_in_signs": [
+        "Scorpio",
+        "Aquarius"
+      ],
+      "description": "Moon (Scorpio 6°21') square Pluto (Aquarius 6°21'), exact 2027-07-12T03:39Z",
+      "fallback": true
+    },
+    {
+      "id": "2027-07-14T16:53Z-opposition-moon-uranus",
+      "ut": "2027-07-14T16:53Z",
+      "type": "opposition",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Sagittarius",
+          "lon": 248.3954,
+          "position": "Sagittarius 8°24'"
+        },
+        {
+          "body": "uranus",
+          "sign": "Gemini",
+          "lon": 68.3954,
+          "position": "Gemini 8°24'"
+        }
+      ],
+      "lands_in_signs": [
+        "Gemini",
+        "Sagittarius"
+      ],
+      "description": "Moon (Sagittarius 8°24') opposition Uranus (Gemini 8°24'), exact 2027-07-14T16:53Z",
+      "fallback": true
     },
     {
       "id": "2027-07-15T05:40Z-ingress-mars",
@@ -1522,6 +3499,31 @@
         "Capricorn"
       ],
       "description": "Full Moon: Moon Capricorn 25°49', Sun Cancer 25°49', exact 2027-07-18T15:45Z"
+    },
+    {
+      "id": "2027-07-18T19:06Z-square-moon-saturn",
+      "ut": "2027-07-18T19:06Z",
+      "type": "square",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Capricorn",
+          "lon": 297.4647,
+          "position": "Capricorn 27°28'"
+        },
+        {
+          "body": "saturn",
+          "sign": "Aries",
+          "lon": 27.4647,
+          "position": "Aries 27°28'"
+        }
+      ],
+      "lands_in_signs": [
+        "Aries",
+        "Capricorn"
+      ],
+      "description": "Moon (Capricorn 27°28') square Saturn (Aries 27°28'), exact 2027-07-18T19:06Z",
+      "fallback": true
     },
     {
       "id": "2027-07-19T14:06Z-square-mercury-neptune",
@@ -1574,6 +3576,31 @@
       "noon_orb": 0.045
     },
     {
+      "id": "2027-07-22T06:51Z-square-moon-uranus",
+      "ut": "2027-07-22T06:51Z",
+      "type": "square",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Pisces",
+          "lon": 338.7288,
+          "position": "Pisces 8°44'"
+        },
+        {
+          "body": "uranus",
+          "sign": "Gemini",
+          "lon": 68.7288,
+          "position": "Gemini 8°44'"
+        }
+      ],
+      "lands_in_signs": [
+        "Gemini",
+        "Pisces"
+      ],
+      "description": "Moon (Pisces 8°44') square Uranus (Gemini 8°44'), exact 2027-07-22T06:51Z",
+      "fallback": true
+    },
+    {
       "id": "2027-07-25T15:19Z-square-venus-saturn",
       "ut": "2027-07-25T15:19Z",
       "type": "square",
@@ -1622,6 +3649,31 @@
       ],
       "description": "Mars (Libra 6°35') opposition Neptune (Aries 6°35'), exact 2027-07-26T13:24Z",
       "noon_orb": 0.035
+    },
+    {
+      "id": "2027-07-26T21:32Z-square-moon-pluto",
+      "ut": "2027-07-26T21:32Z",
+      "type": "square",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Taurus",
+          "lon": 36.0147,
+          "position": "Taurus 6°01'"
+        },
+        {
+          "body": "pluto",
+          "sign": "Aquarius",
+          "lon": 306.0147,
+          "position": "Aquarius 6°01'"
+        }
+      ],
+      "lands_in_signs": [
+        "Taurus",
+        "Aquarius"
+      ],
+      "description": "Moon (Taurus 6°01') square Pluto (Aquarius 6°01'), exact 2027-07-26T21:32Z",
+      "fallback": true
     },
     {
       "id": "2027-07-29T06:48Z-opposition-sun-pluto",
@@ -1699,6 +3751,56 @@
       "noon_orb": 0.264
     },
     {
+      "id": "2027-08-01T14:58Z-square-moon-saturn",
+      "ut": "2027-08-01T14:58Z",
+      "type": "square",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Cancer",
+          "lon": 117.8231,
+          "position": "Cancer 27°49'"
+        },
+        {
+          "body": "saturn",
+          "sign": "Aries",
+          "lon": 27.8231,
+          "position": "Aries 27°49'"
+        }
+      ],
+      "lands_in_signs": [
+        "Aries",
+        "Cancer"
+      ],
+      "description": "Moon (Cancer 27°49') square Saturn (Aries 27°49'), exact 2027-08-01T14:58Z",
+      "fallback": true
+    },
+    {
+      "id": "2027-08-02T03:41Z-opposition-moon-pluto",
+      "ut": "2027-08-02T03:41Z",
+      "type": "opposition",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Leo",
+          "lon": 125.869,
+          "position": "Leo 5°52'"
+        },
+        {
+          "body": "pluto",
+          "sign": "Aquarius",
+          "lon": 305.869,
+          "position": "Aquarius 5°52'"
+        }
+      ],
+      "lands_in_signs": [
+        "Leo",
+        "Aquarius"
+      ],
+      "description": "Moon (Leo 5°52') opposition Pluto (Aquarius 5°52'), exact 2027-08-02T03:41Z",
+      "fallback": true
+    },
+    {
       "id": "2027-08-02T10:05Z-new_moon-sun-moon",
       "ut": "2027-08-02T10:05Z",
       "type": "new_moon",
@@ -1720,6 +3822,31 @@
         "Leo"
       ],
       "description": "New Moon in Leo 9°55', exact 2027-08-02T10:05Z"
+    },
+    {
+      "id": "2027-08-04T08:46Z-square-moon-uranus",
+      "ut": "2027-08-04T08:46Z",
+      "type": "square",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Virgo",
+          "lon": 159.224,
+          "position": "Virgo 9°13'"
+        },
+        {
+          "body": "uranus",
+          "sign": "Gemini",
+          "lon": 69.224,
+          "position": "Gemini 9°13'"
+        }
+      ],
+      "lands_in_signs": [
+        "Gemini",
+        "Virgo"
+      ],
+      "description": "Moon (Virgo 9°13') square Uranus (Gemini 9°13'), exact 2027-08-04T08:46Z",
+      "fallback": true
     },
     {
       "id": "2027-08-05T06:45Z-opposition-mercury-pluto",
@@ -1747,6 +3874,106 @@
       "noon_orb": 0.458
     },
     {
+      "id": "2027-08-07T19:05Z-opposition-moon-saturn",
+      "ut": "2027-08-07T19:05Z",
+      "type": "opposition",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Libra",
+          "lon": 207.8771,
+          "position": "Libra 27°53'"
+        },
+        {
+          "body": "saturn",
+          "sign": "Aries",
+          "lon": 27.8771,
+          "position": "Aries 27°53'"
+        }
+      ],
+      "lands_in_signs": [
+        "Aries",
+        "Libra"
+      ],
+      "description": "Moon (Libra 27°53') opposition Saturn (Aries 27°53'), exact 2027-08-07T19:05Z",
+      "fallback": true
+    },
+    {
+      "id": "2027-08-08T09:13Z-square-moon-pluto",
+      "ut": "2027-08-08T09:13Z",
+      "type": "square",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Scorpio",
+          "lon": 215.7249,
+          "position": "Scorpio 5°43'"
+        },
+        {
+          "body": "pluto",
+          "sign": "Aquarius",
+          "lon": 305.7249,
+          "position": "Aquarius 5°43'"
+        }
+      ],
+      "lands_in_signs": [
+        "Scorpio",
+        "Aquarius"
+      ],
+      "description": "Moon (Scorpio 5°43') square Pluto (Aquarius 5°43'), exact 2027-08-08T09:13Z",
+      "fallback": true
+    },
+    {
+      "id": "2027-08-11T00:51Z-opposition-moon-uranus",
+      "ut": "2027-08-11T00:51Z",
+      "type": "opposition",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Sagittarius",
+          "lon": 249.4322,
+          "position": "Sagittarius 9°26'"
+        },
+        {
+          "body": "uranus",
+          "sign": "Gemini",
+          "lon": 69.4322,
+          "position": "Gemini 9°26'"
+        }
+      ],
+      "lands_in_signs": [
+        "Gemini",
+        "Sagittarius"
+      ],
+      "description": "Moon (Sagittarius 9°26') opposition Uranus (Gemini 9°26'), exact 2027-08-11T00:51Z",
+      "fallback": true
+    },
+    {
+      "id": "2027-08-15T01:58Z-square-moon-saturn",
+      "ut": "2027-08-15T01:58Z",
+      "type": "square",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Capricorn",
+          "lon": 297.8559,
+          "position": "Capricorn 27°51'"
+        },
+        {
+          "body": "saturn",
+          "sign": "Aries",
+          "lon": 27.8559,
+          "position": "Aries 27°51'"
+        }
+      ],
+      "lands_in_signs": [
+        "Aries",
+        "Capricorn"
+      ],
+      "description": "Moon (Capricorn 27°51') square Saturn (Aries 27°51'), exact 2027-08-15T01:58Z",
+      "fallback": true
+    },
+    {
       "id": "2027-08-17T07:29Z-full_moon-sun-moon",
       "ut": "2027-08-17T07:29Z",
       "type": "full_moon",
@@ -1769,6 +3996,31 @@
         "Aquarius"
       ],
       "description": "Full Moon: Moon Aquarius 24°12', Sun Leo 24°12', exact 2027-08-17T07:29Z"
+    },
+    {
+      "id": "2027-08-18T14:32Z-square-moon-uranus",
+      "ut": "2027-08-18T14:32Z",
+      "type": "square",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Pisces",
+          "lon": 339.6292,
+          "position": "Pisces 9°38'"
+        },
+        {
+          "body": "uranus",
+          "sign": "Gemini",
+          "lon": 69.6292,
+          "position": "Gemini 9°38'"
+        }
+      ],
+      "lands_in_signs": [
+        "Gemini",
+        "Pisces"
+      ],
+      "description": "Moon (Pisces 9°38') square Uranus (Gemini 9°38'), exact 2027-08-18T14:32Z",
+      "fallback": true
     },
     {
       "id": "2027-08-22T09:14Z-square-mercury-uranus",
@@ -1796,6 +4048,31 @@
       "noon_orb": 0.206
     },
     {
+      "id": "2027-08-23T02:39Z-square-moon-pluto",
+      "ut": "2027-08-23T02:39Z",
+      "type": "square",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Taurus",
+          "lon": 35.4015,
+          "position": "Taurus 5°24'"
+        },
+        {
+          "body": "pluto",
+          "sign": "Aquarius",
+          "lon": 305.4015,
+          "position": "Aquarius 5°24'"
+        }
+      ],
+      "lands_in_signs": [
+        "Taurus",
+        "Aquarius"
+      ],
+      "description": "Moon (Taurus 5°24') square Pluto (Aquarius 5°24'), exact 2027-08-23T02:39Z",
+      "fallback": true
+    },
+    {
       "id": "2027-08-28T18:04Z-square-venus-uranus",
       "ut": "2027-08-28T18:04Z",
       "type": "square",
@@ -1819,6 +4096,31 @@
       ],
       "description": "Venus (Virgo 9°49') square Uranus (Gemini 9°49'), exact 2027-08-28T18:04Z",
       "noon_orb": 0.31
+    },
+    {
+      "id": "2027-08-29T00:46Z-square-moon-saturn",
+      "ut": "2027-08-29T00:46Z",
+      "type": "square",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Cancer",
+          "lon": 117.5621,
+          "position": "Cancer 27°34'"
+        },
+        {
+          "body": "saturn",
+          "sign": "Aries",
+          "lon": 27.5621,
+          "position": "Aries 27°34'"
+        }
+      ],
+      "lands_in_signs": [
+        "Aries",
+        "Cancer"
+      ],
+      "description": "Moon (Cancer 27°34') square Saturn (Aries 27°34'), exact 2027-08-29T00:46Z",
+      "fallback": true
     },
     {
       "id": "2027-08-29T07:35Z-opposition-mars-saturn",
@@ -1846,6 +4148,31 @@
       "noon_orb": 0.125
     },
     {
+      "id": "2027-08-29T13:12Z-opposition-moon-pluto",
+      "ut": "2027-08-29T13:12Z",
+      "type": "opposition",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Leo",
+          "lon": 125.2725,
+          "position": "Leo 5°16'"
+        },
+        {
+          "body": "pluto",
+          "sign": "Aquarius",
+          "lon": 305.2725,
+          "position": "Aquarius 5°16'"
+        }
+      ],
+      "lands_in_signs": [
+        "Leo",
+        "Aquarius"
+      ],
+      "description": "Moon (Leo 5°16') opposition Pluto (Aquarius 5°16'), exact 2027-08-29T13:12Z",
+      "fallback": true
+    },
+    {
       "id": "2027-08-31T17:41Z-new_moon-sun-moon",
       "ut": "2027-08-31T17:41Z",
       "type": "new_moon",
@@ -1867,6 +4194,31 @@
         "Virgo"
       ],
       "description": "New Moon in Virgo 8°06', exact 2027-08-31T17:41Z"
+    },
+    {
+      "id": "2027-08-31T20:31Z-square-moon-uranus",
+      "ut": "2027-08-31T20:31Z",
+      "type": "square",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Virgo",
+          "lon": 159.8654,
+          "position": "Virgo 9°52'"
+        },
+        {
+          "body": "uranus",
+          "sign": "Gemini",
+          "lon": 69.8654,
+          "position": "Gemini 9°52'"
+        }
+      ],
+      "lands_in_signs": [
+        "Gemini",
+        "Virgo"
+      ],
+      "description": "Moon (Virgo 9°52') square Uranus (Gemini 9°52'), exact 2027-08-31T20:31Z",
+      "fallback": true
     },
     {
       "id": "2027-09-02T01:52Z-ingress-mars",
@@ -1914,6 +4266,56 @@
       "noon_orb": 0.074
     },
     {
+      "id": "2027-09-04T03:06Z-opposition-moon-saturn",
+      "ut": "2027-09-04T03:06Z",
+      "type": "opposition",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Libra",
+          "lon": 207.3332,
+          "position": "Libra 27°20'"
+        },
+        {
+          "body": "saturn",
+          "sign": "Aries",
+          "lon": 27.3332,
+          "position": "Aries 27°20'"
+        }
+      ],
+      "lands_in_signs": [
+        "Aries",
+        "Libra"
+      ],
+      "description": "Moon (Libra 27°20') opposition Saturn (Aries 27°20'), exact 2027-09-04T03:06Z",
+      "fallback": true
+    },
+    {
+      "id": "2027-09-04T16:47Z-square-moon-pluto",
+      "ut": "2027-09-04T16:47Z",
+      "type": "square",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Scorpio",
+          "lon": 215.1588,
+          "position": "Scorpio 5°10'"
+        },
+        {
+          "body": "pluto",
+          "sign": "Aquarius",
+          "lon": 305.1588,
+          "position": "Aquarius 5°10'"
+        }
+      ],
+      "lands_in_signs": [
+        "Scorpio",
+        "Aquarius"
+      ],
+      "description": "Moon (Scorpio 5°10') square Pluto (Aquarius 5°10'), exact 2027-09-04T16:47Z",
+      "fallback": true
+    },
+    {
       "id": "2027-09-07T08:12Z-opposition-mercury-neptune",
       "ut": "2027-09-07T08:12Z",
       "type": "opposition",
@@ -1937,6 +4339,31 @@
       ],
       "description": "Mercury (Libra 5°49') opposition Neptune (Aries 5°49'), exact 2027-09-07T08:12Z",
       "noon_orb": 0.236
+    },
+    {
+      "id": "2027-09-07T08:53Z-opposition-moon-uranus",
+      "ut": "2027-09-07T08:53Z",
+      "type": "opposition",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Sagittarius",
+          "lon": 249.9281,
+          "position": "Sagittarius 9°56'"
+        },
+        {
+          "body": "uranus",
+          "sign": "Gemini",
+          "lon": 69.9281,
+          "position": "Gemini 9°56'"
+        }
+      ],
+      "lands_in_signs": [
+        "Gemini",
+        "Sagittarius"
+      ],
+      "description": "Moon (Sagittarius 9°56') opposition Uranus (Gemini 9°56'), exact 2027-09-07T08:53Z",
+      "fallback": true
     },
     {
       "id": "2027-09-09T18:39Z-square-mars-pluto",
@@ -1989,6 +4416,56 @@
       "noon_orb": 0.041
     },
     {
+      "id": "2027-09-11T06:43Z-square-moon-saturn",
+      "ut": "2027-09-11T06:43Z",
+      "type": "square",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Capricorn",
+          "lon": 296.9939,
+          "position": "Capricorn 27°00'"
+        },
+        {
+          "body": "saturn",
+          "sign": "Aries",
+          "lon": 26.9939,
+          "position": "Aries 27°00'"
+        }
+      ],
+      "lands_in_signs": [
+        "Aries",
+        "Capricorn"
+      ],
+      "description": "Moon (Capricorn 27°00') square Saturn (Aries 27°00'), exact 2027-09-11T06:43Z",
+      "fallback": true
+    },
+    {
+      "id": "2027-09-14T21:33Z-square-moon-uranus",
+      "ut": "2027-09-14T21:33Z",
+      "type": "square",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Pisces",
+          "lon": 339.9556,
+          "position": "Pisces 9°57'"
+        },
+        {
+          "body": "uranus",
+          "sign": "Gemini",
+          "lon": 69.9556,
+          "position": "Gemini 9°57'"
+        }
+      ],
+      "lands_in_signs": [
+        "Gemini",
+        "Pisces"
+      ],
+      "description": "Moon (Pisces 9°57') square Uranus (Gemini 9°57'), exact 2027-09-14T21:33Z",
+      "fallback": true
+    },
+    {
       "id": "2027-09-15T23:04Z-full_moon-sun-moon",
       "ut": "2027-09-15T23:04Z",
       "type": "full_moon",
@@ -2038,6 +4515,31 @@
       "noon_orb": 0.048
     },
     {
+      "id": "2027-09-19T07:17Z-square-moon-pluto",
+      "ut": "2027-09-19T07:17Z",
+      "type": "square",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Taurus",
+          "lon": 34.9367,
+          "position": "Taurus 4°56'"
+        },
+        {
+          "body": "pluto",
+          "sign": "Aquarius",
+          "lon": 304.9367,
+          "position": "Aquarius 4°56'"
+        }
+      ],
+      "lands_in_signs": [
+        "Taurus",
+        "Aquarius"
+      ],
+      "description": "Moon (Taurus 4°56') square Pluto (Aquarius 4°56'), exact 2027-09-19T07:17Z",
+      "fallback": true
+    },
+    {
       "id": "2027-09-23T10:14Z-opposition-mercury-saturn",
       "ut": "2027-09-23T10:14Z",
       "type": "opposition",
@@ -2061,6 +4563,81 @@
       ],
       "description": "Mercury (Libra 26°16') opposition Saturn (Aries 26°16'), exact 2027-09-23T10:14Z",
       "noon_orb": 0.08
+    },
+    {
+      "id": "2027-09-25T06:33Z-square-moon-saturn",
+      "ut": "2027-09-25T06:33Z",
+      "type": "square",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Cancer",
+          "lon": 116.1399,
+          "position": "Cancer 26°08'"
+        },
+        {
+          "body": "saturn",
+          "sign": "Aries",
+          "lon": 26.1399,
+          "position": "Aries 26°08'"
+        }
+      ],
+      "lands_in_signs": [
+        "Aries",
+        "Cancer"
+      ],
+      "description": "Moon (Cancer 26°08') square Saturn (Aries 26°08'), exact 2027-09-25T06:33Z",
+      "fallback": true
+    },
+    {
+      "id": "2027-09-25T21:06Z-opposition-moon-pluto",
+      "ut": "2027-09-25T21:06Z",
+      "type": "opposition",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Leo",
+          "lon": 124.8623,
+          "position": "Leo 4°52'"
+        },
+        {
+          "body": "pluto",
+          "sign": "Aquarius",
+          "lon": 304.8623,
+          "position": "Aquarius 4°52'"
+        }
+      ],
+      "lands_in_signs": [
+        "Leo",
+        "Aquarius"
+      ],
+      "description": "Moon (Leo 4°52') opposition Pluto (Aquarius 4°52'), exact 2027-09-25T21:06Z",
+      "fallback": true
+    },
+    {
+      "id": "2027-09-28T06:36Z-square-moon-uranus",
+      "ut": "2027-09-28T06:36Z",
+      "type": "square",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Virgo",
+          "lon": 159.8856,
+          "position": "Virgo 9°53'"
+        },
+        {
+          "body": "uranus",
+          "sign": "Gemini",
+          "lon": 69.8856,
+          "position": "Gemini 9°53'"
+        }
+      ],
+      "lands_in_signs": [
+        "Gemini",
+        "Virgo"
+      ],
+      "description": "Moon (Virgo 9°53') square Uranus (Gemini 9°53'), exact 2027-09-28T06:36Z",
+      "fallback": true
     },
     {
       "id": "2027-09-28T14:19Z-opposition-sun-neptune",
@@ -2111,6 +4688,56 @@
       "description": "New Moon in Libra 6°43', exact 2027-09-30T02:36Z"
     },
     {
+      "id": "2027-10-01T10:25Z-opposition-moon-saturn",
+      "ut": "2027-10-01T10:25Z",
+      "type": "opposition",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Libra",
+          "lon": 205.7003,
+          "position": "Libra 25°42'"
+        },
+        {
+          "body": "saturn",
+          "sign": "Aries",
+          "lon": 25.7003,
+          "position": "Aries 25°42'"
+        }
+      ],
+      "lands_in_signs": [
+        "Aries",
+        "Libra"
+      ],
+      "description": "Moon (Libra 25°42') opposition Saturn (Aries 25°42'), exact 2027-10-01T10:25Z",
+      "fallback": true
+    },
+    {
+      "id": "2027-10-02T02:03Z-square-moon-pluto",
+      "ut": "2027-10-02T02:03Z",
+      "type": "square",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Scorpio",
+          "lon": 214.8082,
+          "position": "Scorpio 4°48'"
+        },
+        {
+          "body": "pluto",
+          "sign": "Aquarius",
+          "lon": 304.8082,
+          "position": "Aquarius 4°48'"
+        }
+      ],
+      "lands_in_signs": [
+        "Scorpio",
+        "Aquarius"
+      ],
+      "description": "Moon (Scorpio 4°48') square Pluto (Aquarius 4°48'), exact 2027-10-02T02:03Z",
+      "fallback": true
+    },
+    {
       "id": "2027-10-04T12:29Z-opposition-venus-saturn",
       "ut": "2027-10-04T12:29Z",
       "type": "opposition",
@@ -2136,6 +4763,31 @@
       "noon_orb": 0.027
     },
     {
+      "id": "2027-10-04T17:08Z-opposition-moon-uranus",
+      "ut": "2027-10-04T17:08Z",
+      "type": "opposition",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Sagittarius",
+          "lon": 249.7986,
+          "position": "Sagittarius 9°48'"
+        },
+        {
+          "body": "uranus",
+          "sign": "Gemini",
+          "lon": 69.7986,
+          "position": "Gemini 9°48'"
+        }
+      ],
+      "lands_in_signs": [
+        "Gemini",
+        "Sagittarius"
+      ],
+      "description": "Moon (Sagittarius 9°48') opposition Uranus (Gemini 9°48'), exact 2027-10-04T17:08Z",
+      "fallback": true
+    },
+    {
       "id": "2027-10-06T00:31Z-square-mercury-pluto",
       "ut": "2027-10-06T00:31Z",
       "type": "square",
@@ -2159,6 +4811,31 @@
       ],
       "description": "Mercury (Scorpio 4°47') square Pluto (Aquarius 4°47'), exact 2027-10-06T00:31Z",
       "noon_orb": 0.076
+    },
+    {
+      "id": "2027-10-08T10:21Z-square-moon-saturn",
+      "ut": "2027-10-08T10:21Z",
+      "type": "square",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Capricorn",
+          "lon": 295.1694,
+          "position": "Capricorn 25°10'"
+        },
+        {
+          "body": "saturn",
+          "sign": "Aries",
+          "lon": 25.1694,
+          "position": "Aries 25°10'"
+        }
+      ],
+      "lands_in_signs": [
+        "Aries",
+        "Capricorn"
+      ],
+      "description": "Moon (Capricorn 25°10') square Saturn (Aries 25°10'), exact 2027-10-08T10:21Z",
+      "fallback": true
     },
     {
       "id": "2027-10-09T05:26Z-square-mercury-pluto",
@@ -2211,6 +4888,31 @@
       "noon_orb": 0.616
     },
     {
+      "id": "2027-10-12T04:20Z-square-moon-uranus",
+      "ut": "2027-10-12T04:20Z",
+      "type": "square",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Pisces",
+          "lon": 339.6568,
+          "position": "Pisces 9°39'"
+        },
+        {
+          "body": "uranus",
+          "sign": "Gemini",
+          "lon": 69.6568,
+          "position": "Gemini 9°39'"
+        }
+      ],
+      "lands_in_signs": [
+        "Gemini",
+        "Pisces"
+      ],
+      "description": "Moon (Pisces 9°39') square Uranus (Gemini 9°39'), exact 2027-10-12T04:20Z",
+      "fallback": true
+    },
+    {
       "id": "2027-10-15T13:47Z-full_moon-sun-moon",
       "ut": "2027-10-15T13:47Z",
       "type": "full_moon",
@@ -2253,6 +4955,31 @@
       "from_sign": "Scorpio",
       "to_sign": "Sagittarius",
       "retrograde": false
+    },
+    {
+      "id": "2027-10-16T13:19Z-square-moon-pluto",
+      "ut": "2027-10-16T13:19Z",
+      "type": "square",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Taurus",
+          "lon": 34.7488,
+          "position": "Taurus 4°45'"
+        },
+        {
+          "body": "pluto",
+          "sign": "Aquarius",
+          "lon": 304.7488,
+          "position": "Aquarius 4°45'"
+        }
+      ],
+      "lands_in_signs": [
+        "Taurus",
+        "Aquarius"
+      ],
+      "description": "Moon (Taurus 4°45') square Pluto (Aquarius 4°45'), exact 2027-10-16T13:19Z",
+      "fallback": true
     },
     {
       "id": "2027-10-18T00:36Z-opposition-sun-saturn",
@@ -2305,6 +5032,81 @@
       "noon_orb": 0.334
     },
     {
+      "id": "2027-10-22T08:54Z-square-moon-saturn",
+      "ut": "2027-10-22T08:54Z",
+      "type": "square",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Cancer",
+          "lon": 114.0662,
+          "position": "Cancer 24°04'"
+        },
+        {
+          "body": "saturn",
+          "sign": "Aries",
+          "lon": 24.0662,
+          "position": "Aries 24°04'"
+        }
+      ],
+      "lands_in_signs": [
+        "Aries",
+        "Cancer"
+      ],
+      "description": "Moon (Cancer 24°04') square Saturn (Aries 24°04'), exact 2027-10-22T08:54Z",
+      "fallback": true
+    },
+    {
+      "id": "2027-10-23T03:09Z-opposition-moon-pluto",
+      "ut": "2027-10-23T03:09Z",
+      "type": "opposition",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Leo",
+          "lon": 124.754,
+          "position": "Leo 4°45'"
+        },
+        {
+          "body": "pluto",
+          "sign": "Aquarius",
+          "lon": 304.7541,
+          "position": "Aquarius 4°45'"
+        }
+      ],
+      "lands_in_signs": [
+        "Leo",
+        "Aquarius"
+      ],
+      "description": "Moon (Leo 4°45') opposition Pluto (Aquarius 4°45'), exact 2027-10-23T03:09Z",
+      "fallback": true
+    },
+    {
+      "id": "2027-10-25T13:33Z-square-moon-uranus",
+      "ut": "2027-10-25T13:33Z",
+      "type": "square",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Virgo",
+          "lon": 159.3028,
+          "position": "Virgo 9°18'"
+        },
+        {
+          "body": "uranus",
+          "sign": "Gemini",
+          "lon": 69.3028,
+          "position": "Gemini 9°18'"
+        }
+      ],
+      "lands_in_signs": [
+        "Gemini",
+        "Virgo"
+      ],
+      "description": "Moon (Virgo 9°18') square Uranus (Gemini 9°18'), exact 2027-10-25T13:33Z",
+      "fallback": true
+    },
+    {
       "id": "2027-10-28T10:27Z-square-sun-pluto",
       "ut": "2027-10-28T10:27Z",
       "type": "square",
@@ -2328,6 +5130,31 @@
       ],
       "description": "Sun (Scorpio 4°46') square Pluto (Aquarius 4°46'), exact 2027-10-28T10:27Z",
       "noon_orb": 0.065
+    },
+    {
+      "id": "2027-10-28T16:20Z-opposition-moon-saturn",
+      "ut": "2027-10-28T16:20Z",
+      "type": "opposition",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Libra",
+          "lon": 203.5714,
+          "position": "Libra 23°34'"
+        },
+        {
+          "body": "saturn",
+          "sign": "Aries",
+          "lon": 23.5714,
+          "position": "Aries 23°34'"
+        }
+      ],
+      "lands_in_signs": [
+        "Aries",
+        "Libra"
+      ],
+      "description": "Moon (Libra 23°34') opposition Saturn (Aries 23°34'), exact 2027-10-28T16:20Z",
+      "fallback": true
     },
     {
       "id": "2027-10-28T18:06Z-opposition-mars-uranus",
@@ -2355,6 +5182,31 @@
       "noon_orb": 0.193
     },
     {
+      "id": "2027-10-29T11:39Z-square-moon-pluto",
+      "ut": "2027-10-29T11:39Z",
+      "type": "square",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Scorpio",
+          "lon": 214.7784,
+          "position": "Scorpio 4°47'"
+        },
+        {
+          "body": "pluto",
+          "sign": "Aquarius",
+          "lon": 304.7784,
+          "position": "Aquarius 4°47'"
+        }
+      ],
+      "lands_in_signs": [
+        "Scorpio",
+        "Aquarius"
+      ],
+      "description": "Moon (Scorpio 4°47') square Pluto (Aquarius 4°47'), exact 2027-10-29T11:39Z",
+      "fallback": true
+    },
+    {
       "id": "2027-10-29T13:37Z-new_moon-sun-moon",
       "ut": "2027-10-29T13:37Z",
       "type": "new_moon",
@@ -2376,6 +5228,31 @@
         "Scorpio"
       ],
       "description": "New Moon in Scorpio 5°54', exact 2027-10-29T13:37Z"
+    },
+    {
+      "id": "2027-11-01T01:05Z-opposition-moon-uranus",
+      "ut": "2027-11-01T01:05Z",
+      "type": "opposition",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Sagittarius",
+          "lon": 249.0911,
+          "position": "Sagittarius 9°05'"
+        },
+        {
+          "body": "uranus",
+          "sign": "Gemini",
+          "lon": 69.0911,
+          "position": "Gemini 9°05'"
+        }
+      ],
+      "lands_in_signs": [
+        "Gemini",
+        "Sagittarius"
+      ],
+      "description": "Moon (Sagittarius 9°05') opposition Uranus (Gemini 9°05'), exact 2027-11-01T01:05Z",
+      "fallback": true
     },
     {
       "id": "2027-11-04T08:55Z-opposition-mercury-saturn",
@@ -2403,6 +5280,31 @@
       "noon_orb": 0.139
     },
     {
+      "id": "2027-11-04T14:12Z-square-moon-saturn",
+      "ut": "2027-11-04T14:12Z",
+      "type": "square",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Capricorn",
+          "lon": 293.0513,
+          "position": "Capricorn 23°03'"
+        },
+        {
+          "body": "saturn",
+          "sign": "Aries",
+          "lon": 23.0513,
+          "position": "Aries 23°03'"
+        }
+      ],
+      "lands_in_signs": [
+        "Aries",
+        "Capricorn"
+      ],
+      "description": "Moon (Capricorn 23°03') square Saturn (Aries 23°03'), exact 2027-11-04T14:12Z",
+      "fallback": true
+    },
+    {
       "id": "2027-11-08T10:09Z-opposition-venus-uranus",
       "ut": "2027-11-08T10:09Z",
       "type": "opposition",
@@ -2426,6 +5328,56 @@
       ],
       "description": "Venus (Sagittarius 8°49') opposition Uranus (Gemini 8°49'), exact 2027-11-08T10:09Z",
       "noon_orb": 0.099
+    },
+    {
+      "id": "2027-11-08T10:55Z-square-moon-uranus",
+      "ut": "2027-11-08T10:55Z",
+      "type": "square",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Pisces",
+          "lon": 338.8233,
+          "position": "Pisces 8°49'"
+        },
+        {
+          "body": "uranus",
+          "sign": "Gemini",
+          "lon": 68.8233,
+          "position": "Gemini 8°49'"
+        }
+      ],
+      "lands_in_signs": [
+        "Gemini",
+        "Pisces"
+      ],
+      "description": "Moon (Pisces 8°49') square Uranus (Gemini 8°49'), exact 2027-11-08T10:55Z",
+      "fallback": true
+    },
+    {
+      "id": "2027-11-12T21:51Z-square-moon-pluto",
+      "ut": "2027-11-12T21:51Z",
+      "type": "square",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Taurus",
+          "lon": 34.9049,
+          "position": "Taurus 4°54'"
+        },
+        {
+          "body": "pluto",
+          "sign": "Aquarius",
+          "lon": 304.9049,
+          "position": "Aquarius 4°54'"
+        }
+      ],
+      "lands_in_signs": [
+        "Taurus",
+        "Aquarius"
+      ],
+      "description": "Moon (Taurus 4°54') square Pluto (Aquarius 4°54'), exact 2027-11-12T21:51Z",
+      "fallback": true
     },
     {
       "id": "2027-11-13T09:38Z-square-mercury-pluto",
@@ -2502,6 +5454,56 @@
       "noon_orb": 0.196
     },
     {
+      "id": "2027-11-18T11:08Z-square-moon-saturn",
+      "ut": "2027-11-18T11:08Z",
+      "type": "square",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Cancer",
+          "lon": 112.1301,
+          "position": "Cancer 22°08'"
+        },
+        {
+          "body": "saturn",
+          "sign": "Aries",
+          "lon": 22.1301,
+          "position": "Aries 22°08'"
+        }
+      ],
+      "lands_in_signs": [
+        "Aries",
+        "Cancer"
+      ],
+      "description": "Moon (Cancer 22°08') square Saturn (Aries 22°08'), exact 2027-11-18T11:08Z",
+      "fallback": true
+    },
+    {
+      "id": "2027-11-19T08:55Z-opposition-moon-pluto",
+      "ut": "2027-11-19T08:55Z",
+      "type": "opposition",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Leo",
+          "lon": 124.9925,
+          "position": "Leo 5°00'"
+        },
+        {
+          "body": "pluto",
+          "sign": "Aquarius",
+          "lon": 304.9925,
+          "position": "Aquarius 5°00'"
+        }
+      ],
+      "lands_in_signs": [
+        "Leo",
+        "Aquarius"
+      ],
+      "description": "Moon (Leo 5°00') opposition Pluto (Aquarius 5°00'), exact 2027-11-19T08:55Z",
+      "fallback": true
+    },
+    {
       "id": "2027-11-20T03:35Z-square-venus-jupiter",
       "ut": "2027-11-20T03:35Z",
       "type": "square",
@@ -2527,6 +5529,56 @@
       "noon_orb": 0.384
     },
     {
+      "id": "2027-11-21T17:35Z-square-moon-uranus",
+      "ut": "2027-11-21T17:35Z",
+      "type": "square",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Virgo",
+          "lon": 158.2942,
+          "position": "Virgo 8°18'"
+        },
+        {
+          "body": "uranus",
+          "sign": "Gemini",
+          "lon": 68.2942,
+          "position": "Gemini 8°18'"
+        }
+      ],
+      "lands_in_signs": [
+        "Gemini",
+        "Virgo"
+      ],
+      "description": "Moon (Virgo 8°18') square Uranus (Gemini 8°18'), exact 2027-11-21T17:35Z",
+      "fallback": true
+    },
+    {
+      "id": "2027-11-24T20:44Z-opposition-moon-saturn",
+      "ut": "2027-11-24T20:44Z",
+      "type": "opposition",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Libra",
+          "lon": 201.781,
+          "position": "Libra 21°47'"
+        },
+        {
+          "body": "saturn",
+          "sign": "Aries",
+          "lon": 21.781,
+          "position": "Aries 21°47'"
+        }
+      ],
+      "lands_in_signs": [
+        "Aries",
+        "Libra"
+      ],
+      "description": "Moon (Libra 21°47') opposition Saturn (Aries 21°47'), exact 2027-11-24T20:44Z",
+      "fallback": true
+    },
+    {
       "id": "2027-11-25T18:38Z-ingress-mars",
       "ut": "2027-11-25T18:38Z",
       "type": "ingress",
@@ -2545,6 +5597,31 @@
       "from_sign": "Sagittarius",
       "to_sign": "Capricorn",
       "retrograde": false
+    },
+    {
+      "id": "2027-11-25T20:11Z-square-moon-pluto",
+      "ut": "2027-11-25T20:11Z",
+      "type": "square",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Scorpio",
+          "lon": 215.098,
+          "position": "Scorpio 5°06'"
+        },
+        {
+          "body": "pluto",
+          "sign": "Aquarius",
+          "lon": 305.098,
+          "position": "Aquarius 5°06'"
+        }
+      ],
+      "lands_in_signs": [
+        "Scorpio",
+        "Aquarius"
+      ],
+      "description": "Moon (Scorpio 5°06') square Pluto (Aquarius 5°06'), exact 2027-11-25T20:11Z",
+      "fallback": true
     },
     {
       "id": "2027-11-28T03:24Z-new_moon-sun-moon",
@@ -2568,6 +5645,31 @@
         "Sagittarius"
       ],
       "description": "New Moon in Sagittarius 5°39', exact 2027-11-28T03:24Z"
+    },
+    {
+      "id": "2027-11-28T07:47Z-opposition-moon-uranus",
+      "ut": "2027-11-28T07:47Z",
+      "type": "opposition",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Sagittarius",
+          "lon": 248.018,
+          "position": "Sagittarius 8°01'"
+        },
+        {
+          "body": "uranus",
+          "sign": "Gemini",
+          "lon": 68.018,
+          "position": "Gemini 8°01'"
+        }
+      ],
+      "lands_in_signs": [
+        "Gemini",
+        "Sagittarius"
+      ],
+      "description": "Moon (Sagittarius 8°01') opposition Uranus (Gemini 8°01'), exact 2027-11-28T07:47Z",
+      "fallback": true
     },
     {
       "id": "2027-11-28T16:10Z-square-venus-neptune",
@@ -2645,6 +5747,31 @@
       "noon_orb": 0.333
     },
     {
+      "id": "2027-12-01T19:22Z-square-moon-saturn",
+      "ut": "2027-12-01T19:22Z",
+      "type": "square",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Capricorn",
+          "lon": 291.4696,
+          "position": "Capricorn 21°28'"
+        },
+        {
+          "body": "saturn",
+          "sign": "Aries",
+          "lon": 21.4696,
+          "position": "Aries 21°28'"
+        }
+      ],
+      "lands_in_signs": [
+        "Aries",
+        "Capricorn"
+      ],
+      "description": "Moon (Capricorn 21°28') square Saturn (Aries 21°28'), exact 2027-12-01T19:22Z",
+      "fallback": true
+    },
+    {
       "id": "2027-12-04T08:46Z-opposition-mercury-uranus",
       "ut": "2027-12-04T08:46Z",
       "type": "opposition",
@@ -2668,6 +5795,56 @@
       ],
       "description": "Mercury (Sagittarius 7°46') opposition Uranus (Gemini 7°46'), exact 2027-12-04T08:46Z",
       "noon_orb": 0.217
+    },
+    {
+      "id": "2027-12-05T16:58Z-square-moon-uranus",
+      "ut": "2027-12-05T16:58Z",
+      "type": "square",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Pisces",
+          "lon": 337.707,
+          "position": "Pisces 7°42'"
+        },
+        {
+          "body": "uranus",
+          "sign": "Gemini",
+          "lon": 67.707,
+          "position": "Gemini 7°42'"
+        }
+      ],
+      "lands_in_signs": [
+        "Gemini",
+        "Pisces"
+      ],
+      "description": "Moon (Pisces 7°42') square Uranus (Gemini 7°42'), exact 2027-12-05T16:58Z",
+      "fallback": true
+    },
+    {
+      "id": "2027-12-10T08:27Z-square-moon-pluto",
+      "ut": "2027-12-10T08:27Z",
+      "type": "square",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Taurus",
+          "lon": 35.3955,
+          "position": "Taurus 5°24'"
+        },
+        {
+          "body": "pluto",
+          "sign": "Aquarius",
+          "lon": 305.3955,
+          "position": "Aquarius 5°24'"
+        }
+      ],
+      "lands_in_signs": [
+        "Taurus",
+        "Aquarius"
+      ],
+      "description": "Moon (Taurus 5°24') square Pluto (Aquarius 5°24'), exact 2027-12-10T08:27Z",
+      "fallback": true
     },
     {
       "id": "2027-12-12T14:12Z-square-venus-saturn",
@@ -2719,6 +5896,31 @@
       "description": "Full Moon: Moon Gemini 21°25', Sun Sagittarius 21°25', exact 2027-12-13T16:09Z"
     },
     {
+      "id": "2027-12-15T17:04Z-square-moon-saturn",
+      "ut": "2027-12-15T17:04Z",
+      "type": "square",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Cancer",
+          "lon": 111.0858,
+          "position": "Cancer 21°05'"
+        },
+        {
+          "body": "saturn",
+          "sign": "Aries",
+          "lon": 21.0858,
+          "position": "Aries 21°05'"
+        }
+      ],
+      "lands_in_signs": [
+        "Aries",
+        "Cancer"
+      ],
+      "description": "Moon (Cancer 21°05') square Saturn (Aries 21°05'), exact 2027-12-15T17:04Z",
+      "fallback": true
+    },
+    {
       "id": "2027-12-16T04:45Z-square-mercury-jupiter",
       "ut": "2027-12-16T04:45Z",
       "type": "square",
@@ -2742,6 +5944,31 @@
       ],
       "description": "Mercury (Sagittarius 26°22') square Jupiter (Virgo 26°22'), exact 2027-12-16T04:45Z",
       "noon_orb": 0.452
+    },
+    {
+      "id": "2027-12-16T16:48Z-opposition-moon-pluto",
+      "ut": "2027-12-16T16:48Z",
+      "type": "opposition",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Leo",
+          "lon": 125.549,
+          "position": "Leo 5°33'"
+        },
+        {
+          "body": "pluto",
+          "sign": "Aquarius",
+          "lon": 305.549,
+          "position": "Aquarius 5°33'"
+        }
+      ],
+      "lands_in_signs": [
+        "Leo",
+        "Aquarius"
+      ],
+      "description": "Moon (Leo 5°33') opposition Pluto (Aquarius 5°33'), exact 2027-12-16T16:48Z",
+      "fallback": true
     },
     {
       "id": "2027-12-18T17:42Z-square-sun-jupiter",
@@ -2769,6 +5996,31 @@
       "noon_orb": 0.224
     },
     {
+      "id": "2027-12-18T21:18Z-square-moon-uranus",
+      "ut": "2027-12-18T21:18Z",
+      "type": "square",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Virgo",
+          "lon": 157.1703,
+          "position": "Virgo 7°10'"
+        },
+        {
+          "body": "uranus",
+          "sign": "Gemini",
+          "lon": 67.1703,
+          "position": "Gemini 7°10'"
+        }
+      ],
+      "lands_in_signs": [
+        "Gemini",
+        "Virgo"
+      ],
+      "description": "Moon (Virgo 7°10') square Uranus (Gemini 7°10'), exact 2027-12-18T21:18Z",
+      "fallback": true
+    },
+    {
       "id": "2027-12-20T22:22Z-square-mercury-neptune",
       "ut": "2027-12-20T22:22Z",
       "type": "square",
@@ -2794,6 +6046,56 @@
       "noon_orb": 0.685
     },
     {
+      "id": "2027-12-22T01:01Z-opposition-moon-saturn",
+      "ut": "2027-12-22T01:01Z",
+      "type": "opposition",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Libra",
+          "lon": 201.0246,
+          "position": "Libra 21°01'"
+        },
+        {
+          "body": "saturn",
+          "sign": "Aries",
+          "lon": 21.0246,
+          "position": "Aries 21°01'"
+        }
+      ],
+      "lands_in_signs": [
+        "Aries",
+        "Libra"
+      ],
+      "description": "Moon (Libra 21°01') opposition Saturn (Aries 21°01'), exact 2027-12-22T01:01Z",
+      "fallback": true
+    },
+    {
+      "id": "2027-12-23T03:18Z-square-moon-pluto",
+      "ut": "2027-12-23T03:18Z",
+      "type": "square",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Scorpio",
+          "lon": 215.7167,
+          "position": "Scorpio 5°43'"
+        },
+        {
+          "body": "pluto",
+          "sign": "Aquarius",
+          "lon": 305.7167,
+          "position": "Aquarius 5°43'"
+        }
+      ],
+      "lands_in_signs": [
+        "Scorpio",
+        "Aquarius"
+      ],
+      "description": "Moon (Scorpio 5°43') square Pluto (Aquarius 5°43'), exact 2027-12-23T03:18Z",
+      "fallback": true
+    },
+    {
       "id": "2027-12-23T04:01Z-square-mars-saturn",
       "ut": "2027-12-23T04:01Z",
       "type": "square",
@@ -2817,6 +6119,31 @@
       ],
       "description": "Mars (Capricorn 21°01') square Saturn (Aries 21°01'), exact 2027-12-23T04:01Z",
       "noon_orb": 0.259
+    },
+    {
+      "id": "2027-12-25T12:47Z-opposition-moon-uranus",
+      "ut": "2027-12-25T12:47Z",
+      "type": "opposition",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Sagittarius",
+          "lon": 246.9192,
+          "position": "Sagittarius 6°55'"
+        },
+        {
+          "body": "uranus",
+          "sign": "Gemini",
+          "lon": 66.9192,
+          "position": "Gemini 6°55'"
+        }
+      ],
+      "lands_in_signs": [
+        "Gemini",
+        "Sagittarius"
+      ],
+      "description": "Moon (Sagittarius 6°55') opposition Uranus (Gemini 6°55'), exact 2027-12-25T12:47Z",
+      "fallback": true
     },
     {
       "id": "2027-12-25T22:12Z-square-sun-neptune",
@@ -2867,6 +6194,31 @@
       "description": "New Moon in Capricorn 5°50', exact 2027-12-27T20:12Z"
     },
     {
+      "id": "2027-12-29T02:10Z-square-moon-saturn",
+      "ut": "2027-12-29T02:10Z",
+      "type": "square",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Capricorn",
+          "lon": 291.0437,
+          "position": "Capricorn 21°03'"
+        },
+        {
+          "body": "saturn",
+          "sign": "Aries",
+          "lon": 21.0437,
+          "position": "Aries 21°03'"
+        }
+      ],
+      "lands_in_signs": [
+        "Aries",
+        "Capricorn"
+      ],
+      "description": "Moon (Capricorn 21°03') square Saturn (Aries 21°03'), exact 2027-12-29T02:10Z",
+      "fallback": true
+    },
+    {
       "id": "2027-12-31T15:59Z-square-mercury-saturn",
       "ut": "2027-12-31T15:59Z",
       "type": "square",
@@ -2892,6 +6244,31 @@
       "noon_orb": 0.265
     },
     {
+      "id": "2028-01-01T22:27Z-square-moon-uranus",
+      "ut": "2028-01-01T22:27Z",
+      "type": "square",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Pisces",
+          "lon": 336.6633,
+          "position": "Pisces 6°40'"
+        },
+        {
+          "body": "uranus",
+          "sign": "Gemini",
+          "lon": 66.6633,
+          "position": "Gemini 6°40'"
+        }
+      ],
+      "lands_in_signs": [
+        "Gemini",
+        "Pisces"
+      ],
+      "description": "Moon (Pisces 6°40') square Uranus (Gemini 6°40'), exact 2028-01-01T22:27Z",
+      "fallback": true
+    },
+    {
       "id": "2028-01-03T16:02Z-ingress-mars",
       "ut": "2028-01-03T16:02Z",
       "type": "ingress",
@@ -2910,6 +6287,31 @@
       "from_sign": "Capricorn",
       "to_sign": "Aquarius",
       "retrograde": false
+    },
+    {
+      "id": "2028-01-06T19:25Z-square-moon-pluto",
+      "ut": "2028-01-06T19:25Z",
+      "type": "square",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Taurus",
+          "lon": 36.1363,
+          "position": "Taurus 6°08'"
+        },
+        {
+          "body": "pluto",
+          "sign": "Aquarius",
+          "lon": 306.1363,
+          "position": "Aquarius 6°08'"
+        }
+      ],
+      "lands_in_signs": [
+        "Taurus",
+        "Aquarius"
+      ],
+      "description": "Moon (Taurus 6°08') square Pluto (Aquarius 6°08'), exact 2028-01-06T19:25Z",
+      "fallback": true
     },
     {
       "id": "2028-01-12T01:33Z-square-sun-saturn",
@@ -2937,6 +6339,31 @@
       "noon_orb": 0.428
     },
     {
+      "id": "2028-01-12T03:53Z-square-moon-saturn",
+      "ut": "2028-01-12T03:53Z",
+      "type": "square",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Cancer",
+          "lon": 111.3561,
+          "position": "Cancer 21°21'"
+        },
+        {
+          "body": "saturn",
+          "sign": "Aries",
+          "lon": 21.3561,
+          "position": "Aries 21°21'"
+        }
+      ],
+      "lands_in_signs": [
+        "Aries",
+        "Cancer"
+      ],
+      "description": "Moon (Cancer 21°21') square Saturn (Aries 21°21'), exact 2028-01-12T03:53Z",
+      "fallback": true
+    },
+    {
       "id": "2028-01-12T04:03Z-full_moon-sun-moon",
       "ut": "2028-01-12T04:03Z",
       "type": "full_moon",
@@ -2959,6 +6386,81 @@
         "Capricorn"
       ],
       "description": "Full Moon: Moon Cancer 21°28', Sun Capricorn 21°28', exact 2028-01-12T04:03Z"
+    },
+    {
+      "id": "2028-01-13T03:49Z-opposition-moon-pluto",
+      "ut": "2028-01-13T03:49Z",
+      "type": "opposition",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Leo",
+          "lon": 126.3297,
+          "position": "Leo 6°20'"
+        },
+        {
+          "body": "pluto",
+          "sign": "Aquarius",
+          "lon": 306.3297,
+          "position": "Aquarius 6°20'"
+        }
+      ],
+      "lands_in_signs": [
+        "Leo",
+        "Aquarius"
+      ],
+      "description": "Moon (Leo 6°20') opposition Pluto (Aquarius 6°20'), exact 2028-01-13T03:49Z",
+      "fallback": true
+    },
+    {
+      "id": "2028-01-15T03:49Z-square-moon-uranus",
+      "ut": "2028-01-15T03:49Z",
+      "type": "square",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Virgo",
+          "lon": 156.2871,
+          "position": "Virgo 6°17'"
+        },
+        {
+          "body": "uranus",
+          "sign": "Gemini",
+          "lon": 66.2871,
+          "position": "Gemini 6°17'"
+        }
+      ],
+      "lands_in_signs": [
+        "Gemini",
+        "Virgo"
+      ],
+      "description": "Moon (Virgo 6°17') square Uranus (Gemini 6°17'), exact 2028-01-15T03:49Z",
+      "fallback": true
+    },
+    {
+      "id": "2028-01-18T07:48Z-opposition-moon-saturn",
+      "ut": "2028-01-18T07:48Z",
+      "type": "opposition",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Libra",
+          "lon": 201.604,
+          "position": "Libra 21°36'"
+        },
+        {
+          "body": "saturn",
+          "sign": "Aries",
+          "lon": 21.604,
+          "position": "Aries 21°36'"
+        }
+      ],
+      "lands_in_signs": [
+        "Aries",
+        "Libra"
+      ],
+      "description": "Moon (Libra 21°36') opposition Saturn (Aries 21°36'), exact 2028-01-18T07:48Z",
+      "fallback": true
     },
     {
       "id": "2028-01-18T10:39Z-square-venus-uranus",
@@ -2986,6 +6488,81 @@
       "noon_orb": 0.069
     },
     {
+      "id": "2028-01-19T10:14Z-square-moon-pluto",
+      "ut": "2028-01-19T10:14Z",
+      "type": "square",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Scorpio",
+          "lon": 216.5246,
+          "position": "Scorpio 6°31'"
+        },
+        {
+          "body": "pluto",
+          "sign": "Aquarius",
+          "lon": 306.5246,
+          "position": "Aquarius 6°31'"
+        }
+      ],
+      "lands_in_signs": [
+        "Scorpio",
+        "Aquarius"
+      ],
+      "description": "Moon (Scorpio 6°31') square Pluto (Aquarius 6°31'), exact 2028-01-19T10:14Z",
+      "fallback": true
+    },
+    {
+      "id": "2028-01-21T17:00Z-opposition-moon-uranus",
+      "ut": "2028-01-21T17:00Z",
+      "type": "opposition",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Sagittarius",
+          "lon": 246.1461,
+          "position": "Sagittarius 6°09'"
+        },
+        {
+          "body": "uranus",
+          "sign": "Gemini",
+          "lon": 66.1461,
+          "position": "Gemini 6°09'"
+        }
+      ],
+      "lands_in_signs": [
+        "Gemini",
+        "Sagittarius"
+      ],
+      "description": "Moon (Sagittarius 6°09') opposition Uranus (Gemini 6°09'), exact 2028-01-21T17:00Z",
+      "fallback": true
+    },
+    {
+      "id": "2028-01-25T10:36Z-square-moon-saturn",
+      "ut": "2028-01-25T10:36Z",
+      "type": "square",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Capricorn",
+          "lon": 291.9706,
+          "position": "Capricorn 21°58'"
+        },
+        {
+          "body": "saturn",
+          "sign": "Aries",
+          "lon": 21.9706,
+          "position": "Aries 21°58'"
+        }
+      ],
+      "lands_in_signs": [
+        "Aries",
+        "Capricorn"
+      ],
+      "description": "Moon (Capricorn 21°58') square Saturn (Aries 21°58'), exact 2028-01-25T10:36Z",
+      "fallback": true
+    },
+    {
       "id": "2028-01-26T15:13Z-new_moon-sun-moon",
       "ut": "2028-01-26T15:13Z",
       "type": "new_moon",
@@ -3007,6 +6584,31 @@
         "Aquarius"
       ],
       "description": "New Moon in Aquarius 6°11', exact 2028-01-26T15:13Z"
+    },
+    {
+      "id": "2028-01-29T03:50Z-square-moon-uranus",
+      "ut": "2028-01-29T03:50Z",
+      "type": "square",
+      "bodies": [
+        {
+          "body": "moon",
+          "sign": "Pisces",
+          "lon": 336.0271,
+          "position": "Pisces 6°02'"
+        },
+        {
+          "body": "uranus",
+          "sign": "Gemini",
+          "lon": 66.0271,
+          "position": "Gemini 6°02'"
+        }
+      ],
+      "lands_in_signs": [
+        "Gemini",
+        "Pisces"
+      ],
+      "description": "Moon (Pisces 6°02') square Uranus (Gemini 6°02'), exact 2028-01-29T03:50Z",
+      "fallback": true
     }
   ]
 }

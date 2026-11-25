@@ -12,56 +12,42 @@
 
 <script>
   var CONFIG = {
-    /* ---------- DATA: the evergreen engine ---------- */
-    // The page scores the visitor's own next 30 days with ATHENA's scorer.js
-    // over EVENTS.json + QUIZ-RULES.json (quiz/evergreen/, commit 1abb41a43).
-    // Paths are relative to this page. On the server, upload the four files
-    // next to index.html and change these to the bare file names.
+
     SCORER_URL: "scorer.js",
     EVENTS_URL: "EVENTS.json",
     RULES_URL: "QUIZ-RULES.json",
     CUSPS_URL: "SUN-SIGN-CUSPS.json",
-    // Test data. true = use the stub events + rules (the scorer and the cusp
-    // file are always the real ones). ?stub=1 in the URL does the same.
-    // MUST be false live.
+
     USE_STUB: false,
     STUB_EVENTS_URL: "stub/EVENTS.stub.json",
     STUB_RULES_URL:  "stub/QUIZ-RULES.stub.json",
-    // Birth-year range offered. Must stay inside SUN-SIGN-CUSPS.json coverage.
+
     YEAR_MIN: 1920,
     YEAR_MAX: 2010,
 
-    /* ---------- AWEBER (standard web-form POST) ---------- */
-    // false = nothing is sent; the payload is printed to the browser console.
-    SEND_TO_AWEBER: true,                      // on 2026-11-24 (Liz): keep what people tell us
+    SEND_TO_AWEBER: true,
     AWEBER_ACTION: "https://www.aweber.com/scripts/addlead.pl",
-    AWEBER_LISTNAME: "awlist4385291",          // ~Cosmos Subscribers (list id 4385291)
-    AWEBER_WEB_FORM_ID: "970892867",           // AWeber form "for auto submit" on the Cosmos list; browser POST tested 2026-11-24
+    AWEBER_LISTNAME: "awlist4385291",
+    AWEBER_WEB_FORM_ID: "970892867",
     AWEBER_SPLIT_ID: "",
     AWEBER_REDIRECT: "",
-    AWEBER_ADTRACKING_PREFIX: "dsquiz",        // ad tracking e.g. "dsquiz-money" (AWeber cuts ad tracking at 20 characters)
-    // AWeber custom fields are posted as "custom <Field Name>". The names here
-    // must match the custom fields on the list EXACTLY. They may not exist yet.
-    FIELD_BIRTH_DATE: "custom birth_date",     // created on the list 2026-11-24
-    FIELD_SIGN: "custom sun_sign",             // created on the list 2026-11-24
-    FIELD_AREA: "custom worry_area",           // created on the list 2026-11-24
+    AWEBER_ADTRACKING_PREFIX: "dsquiz",
 
-    /* ---------- OFFER ---------- */
+    FIELD_BIRTH_DATE: "custom birth_date",
+    FIELD_SIGN: "custom sun_sign",
+    FIELD_AREA: "custom worry_area",
+
     CHART_URL: "https://hop.clickbank.net/?affiliate=nobs01&vendor=cosmicpro&tid=dsquiz",
 
-    /* ---------- CHARACTER ---------- */
-    // The kitten's name is not settled (PORTIA recommends dropping "Doom Kitty").
-    // Every mention on the page reads from here. Empty = "the kitten".
     CHARACTER_NAME: "",
 
-    /* ---------- LEGAL LINKS ---------- */
     PRIVACY_URL: "https://cosmic-operations.com/privacy-policy/"
   };
 </script>
 
 <style>
   :root {
-    /* Cosmos / Cosmic Vibes palette (brand bible p.17 + oracle page grounds) */
+
     --purple:   #503b80;
     --purple-d: #2e2150;
     --purple-dd:#1c1534;
@@ -70,7 +56,7 @@
     --ink:      #231f20;
     --mauve:    #a896a0;
     --sage:     #5b714d;
-    --gold:     #d8b56b;   /* sparing accent only */
+    --gold:     #d8b56b;
     --cream:    #f6f2ee;
     --paper:    #fbf9f7;
     --line:     #e7dff0;
@@ -94,7 +80,6 @@
   .wrap { width: 100%; max-width: var(--maxw); margin: 0 auto; padding: 0 20px; }
   [hidden] { display: none !important; }
 
-  /* ---------- Top bar ---------- */
   .topbar {
     position: sticky; top: 0; z-index: 60;
     background: rgba(28,21,52,.86); backdrop-filter: blur(10px);
@@ -112,10 +97,9 @@
     letter-spacing: .16em; text-transform: uppercase; color: #efe7fb;
   }
 
-  /* ---------- Hero ---------- */
   .hero {
     position: relative; color: #fff; overflow: hidden;
-    background-color: var(--purple-d); /* solid dark fallback under the gradients */
+    background-color: var(--purple-d);
     background-image:
       radial-gradient(ellipse 60% 55% at 78% 40%, rgba(107,84,163,.55), transparent 70%),
       radial-gradient(ellipse 50% 60% at 10% 90%, rgba(49,109,121,.45), transparent 70%),
@@ -160,7 +144,6 @@
   .hero .sub .wide { display: none; }
   .hero .sub { font-size: 18px; color: #efe7fb; max-width: 560px; margin: 0 auto; }
 
-  /* ---------- Quiz card ---------- */
   .quiz-zone { position: relative; z-index: 5; margin-top: -120px; padding-bottom: 56px; }
   .quiz {
     max-width: 640px; margin: 0 auto; background: linear-gradient(180deg, #fff, #fbf8f4);
@@ -216,7 +199,6 @@
 
   .err { font-size: 15px; color: #8a2a3a; margin: -6px 0 14px; font-weight: 600; }
 
-  /* cusp + area choices */
   .choices { display: grid; gap: 10px; }
   .choices.two { grid-template-columns: 1fr 1fr; }
   .area-btn {
@@ -245,7 +227,6 @@
   .fine a { color: var(--purple); }
   .stack { display: grid; gap: 12px; margin-bottom: 16px; }
 
-  /* ---------- Result ---------- */
   .result-top { text-align: center; }
   .label { display: inline-block; font-size: 14px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--teal); margin-bottom: 14px; }
   .medallion {
@@ -298,7 +279,6 @@
     padding: 4px 12px; border-radius: 6px; margin-bottom: 12px;
   }
 
-  /* ---------- How it works ---------- */
   .how { padding: 20px 0 64px; }
   .eyebrow-dark { display: block; text-align: center; font-family: "Montserrat", sans-serif; font-size: 14px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: var(--teal); margin-bottom: 10px; }
   h2.section-title { text-align: center; font-weight: 800; font-size: clamp(26px, 3.6vw, 38px); line-height: 1.15; color: var(--purple-d); margin-bottom: 14px; letter-spacing: -.01em; }
@@ -327,7 +307,6 @@
   .rule p { margin: 0; font-size: 16px; color: var(--body); }
   .rule p b { color: var(--purple-d); }
 
-  /* ---------- Close band ---------- */
   .close-band {
     position: relative; overflow: hidden; color: #fff; text-align: center; padding: 64px 0;
     background-color: var(--purple-d);
@@ -341,7 +320,6 @@
   .close-band .btn { width: auto; margin-top: 10px; }
   .close-band .from { font-family: "Montserrat", sans-serif; font-weight: 700; color: #fff; margin-top: 18px; }
 
-  /* ---------- Footer ---------- */
   .foot { background: var(--ink); color: #c9c2d0; padding: 36px 0; text-align: center; font-size: 14px; }
   .foot .logo-pill { margin-bottom: 14px; }
   .foot .logo-pill img { height: 36px; }
@@ -349,11 +327,9 @@
   .foot p { margin: 0 0 10px; line-height: 1.6; }
   .foot .links a { margin: 0 4px; }
 
-  /* scroll reveal */
   .fx { opacity: 0; transform: translateY(22px); transition: opacity .7s ease, transform .7s ease; }
   .fx.in { opacity: 1; transform: none; }
 
-  /* ---------- Larger screens ---------- */
   @media (min-width: 860px) {
     body { font-size: 18px; }
     .hero { padding: 56px 0 170px; }
@@ -503,12 +479,12 @@
           <div class="pick">
             <div class="pick-head">
               <span class="eyebrow"><span class="dot"></span> Cindy's pick for you</span>
-              <h3>Cosmic Destiny Chart</h3>
+              <h3>Cosmic Energy Profile</h3>
             </div>
             <div class="pick-body">
-              <p>That's your next 30 days, for one part of your life. Your chart is the rest of you: your own patterns, the ones you keep walking into. If you'd like to see the whole of it, this is where I'd start.</p>
+              <p>That's your next 30 days, for one part of your life. Your Cosmic Energy Profile is the rest of you: your own patterns, the ones you keep walking into. If you'd like to see the whole of it, this is where I'd start.</p>
               <p><strong>I picked this one for you myself.</strong></p>
-              <a class="btn purple" id="chartBtn" href="#" target="_blank" rel="noopener">See your chart <span class="arr">&rarr;</span></a>
+              <a class="btn purple" id="chartBtn" href="#" target="_blank" rel="noopener">See your Cosmic Energy Profile <span class="arr">&rarr;</span></a>
               <p class="sig">Cindy, Cosmic Operations</p>
               <button class="back again" id="again">Check another birthday</button>
             </div>
@@ -535,7 +511,7 @@
     <div class="fx">
       <span class="eyebrow-dark">How I find your day</span>
       <h2 class="section-title">Nothing is guessed. It's all on file.</h2>
-      <p class="lead">Every sign has five parts of life I keep a file on. Each one is a set of houses in your chart, counted from your sign.</p>
+      <p class="lead">Every sign has five parts of life I keep a file on. Each one is a set of houses, counted from your sign.</p>
     </div>
     <div class="areas">
       <div class="area-card fx"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#f3ead2" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="8.5"/><path d="M14.6 9.2c-.5-.8-1.5-1.2-2.6-1.2-1.6 0-2.7.8-2.7 2s1.1 1.6 2.7 2 2.8.8 2.8 2.1-1.2 2-2.8 2c-1.2 0-2.2-.5-2.7-1.3M12 6.5v11"/></svg></div><h3>Money</h3><div class="houses">2nd and 8th houses</div><p>What you earn and what you owe.</p></div>
@@ -545,7 +521,7 @@
       <div class="area-card fx"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#f3ead2" stroke-width="1.8" stroke-linejoin="round"><path d="M4.5 6.5h15v9h-8l-4 3.5v-3.5h-3z"/><path d="M8.5 11h7" stroke-linecap="round"/></svg></div><h3>Your own mouth</h3><div class="houses">3rd house</div><p>What you say, and when you say it.</p></div>
     </div>
     <div class="rules">
-      <div class="rule fx"><span class="n">1</span><p><b>I list the hard sky in your next 30 days.</b> Full and new moons, Mars or Saturn changing sign, and the hard angles between planets, dated to your own time zone.</p></div>
+      <div class="rule fx"><span class="n">1</span><p><b>I list the hard sky in your next 30 days.</b> Full and new moons, Mars or Saturn changing sign, and the hard angles between planets, dated to your own time zone. When none of those lands in your houses, I use the Moon's hard angles to Saturn, Uranus and Pluto.</p></div>
       <div class="rule fx"><span class="n">2</span><p><b>I count what lands in your houses.</b> Your worst day is the one where the most of it lands. If two days tie, you get the earlier one, so you're warned first.</p></div>
       <div class="rule fx"><span class="n">3</span><p><b>Someone checks my work.</b> Every date in the file is checked against the real sky before it goes in the drawer. If nothing lands on you, I'll tell you it's a quiet 30 days.</p></div>
     </div>
@@ -579,7 +555,6 @@
 (function(){
   "use strict";
 
-  /* ---------- starfields ---------- */
   function stars(id, n){
     var s = document.getElementById(id); if(!s) return;
     for(var i=0;i<n;i++){
@@ -594,7 +569,6 @@
   }
   stars('stars', 70); stars('stars2', 40);
 
-  /* ---------- scroll reveal ---------- */
   (function(){
     var els = document.querySelectorAll('.fx');
     if(!('IntersectionObserver' in window)){ els.forEach(function(e){ e.classList.add('in'); }); return; }
@@ -604,14 +578,12 @@
     els.forEach(function(e){ io.observe(e); });
   })();
 
-  /* ---------- constants ---------- */
   var SIGNS = ["Aries","Taurus","Gemini","Cancer","Leo","Virgo","Libra","Scorpio","Sagittarius","Capricorn","Aquarius","Pisces"];
   var MONTHS = ["January","February","March","April","May","June","July","August","September","October","November","December"];
   var WEEKDAYS = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
   var AREA_NAMES = { money: "money", love: "love", work: "work", home: "home and family", mouth: "own mouth" };
   var YEAR_MAX = CONFIG.YEAR_MAX, YEAR_MIN = CONFIG.YEAR_MIN;
 
-  /* ---------- character name (one config value) ---------- */
   (function(){
     var n = (CONFIG.CHARACTER_NAME || '').trim();
     document.querySelectorAll('[data-character]').forEach(function(el){
@@ -629,11 +601,10 @@
   var state = { birth: null, sign: null, area: null };
   var DATA = null, dataPromise = null;
 
-  /* ---------- data ---------- */
   function getJSON(url){
     return fetch(url, { cache: 'no-cache' }).then(function(r){ if(!r.ok) throw new Error(url + ' ' + r.status); return r.json(); });
   }
-  // scorer.js is a plain script; in a browser it defines a global score().
+
   function loadScorer(){
     return new Promise(function(resolve, reject){
       if (typeof window.score === 'function') return resolve(window.score);
@@ -658,18 +629,14 @@
     }).catch(function(e){ dataPromise = null; throw e; });
     return dataPromise;
   }
-  loadData().catch(function(){ /* retried when needed */ });
+  loadData().catch(function(){  });
 
-  /* ---------- dates ---------- */
   function pad(n){ return (n < 10 ? '0' : '') + n; }
   function iso(y,m,d){ return y + '-' + pad(m) + '-' + pad(d); }
   function daysIn(y,m){ return new Date(Date.UTC(y || 2000, m, 0)).getUTCDate(); }
   function addDays(s, k){ var p = s.split('-'); var dt = new Date(Date.UTC(+p[0], +p[1]-1, +p[2] + k)); return dt.toISOString().slice(0,10); }
   function prevSign(s){ var i = SIGNS.indexOf(s); return SIGNS[(i + 11) % 12]; }
 
-  // Sun sign from SUN-SIGN-CUSPS.json, per its meta.how_to_use: a birth date
-  // in an ingress's cusp_local_dates gets the "which sign" tap; otherwise the
-  // sign is that of the latest ingress whose cusp dates all fall before it.
   function signFor(birth){
     var list = DATA.ingresses, sign = null, cusp = null;
     if (!list.length || birth < list[0].ut_date) return null;
@@ -681,8 +648,6 @@
     return { sign: sign, cusp: cusp };
   }
 
-  // The visitor's own calendar date and IANA zone.
-  // ?today=YYYY-MM-DD and ?tz=Area/City override them for testing.
   function visitorTz(){
     var t = params.get('tz'); if (t) return t;
     try { return Intl.DateTimeFormat().resolvedOptions().timeZone || 'UTC'; } catch (e) { return 'UTC'; }
@@ -692,7 +657,6 @@
     var d = new Date(); return iso(d.getFullYear(), d.getMonth() + 1, d.getDate());
   }
 
-  // Event text for a person, not an ephemeris: drop the exact-time tail and degrees.
   function eventLabel(e){
     var t = typeof e === 'string' ? e : (e.label || e.description || e.event || '');
     return t.replace(/Â/g, '')
@@ -709,7 +673,6 @@
     return { wd: WEEKDAYS[dt.getUTCDay()], month: MONTHS[dt.getUTCMonth()], day: dt.getUTCDate() };
   }
 
-  /* ---------- step 1: birth date selects ---------- */
   var mSel = document.getElementById('m'), dSel = document.getElementById('d'), ySel = document.getElementById('y');
   MONTHS.forEach(function(name, i){ var o = document.createElement('option'); o.value = i+1; o.textContent = name; mSel.appendChild(o); });
   for (var yy = YEAR_MAX; yy >= YEAR_MIN; yy--) { var o = document.createElement('option'); o.value = yy; o.textContent = yy; ySel.appendChild(o); }
@@ -727,7 +690,6 @@
   ySel.addEventListener('change', function(){ fillDays(); checkDob(); });
   dSel.addEventListener('change', checkDob);
 
-  /* ---------- step navigation ---------- */
   var STEPS = ['s-dob','s-cusp','s-area','s-email','s-result','s-error'];
   var TAGS = { 's-dob':'Tap 1 of 2', 's-cusp':'One more tap', 's-area':'Tap 2 of 2', 's-email':'Last step', 's-result':'Your day', 's-error':'One moment' };
   var DOTS = { 's-dob':1, 's-cusp':1, 's-area':2, 's-email':3, 's-result':3, 's-error':1 };
@@ -783,7 +745,6 @@
     show('s-dob');
   });
 
-  /* ---------- step 3: email -> AWeber ---------- */
   function postToAweber(email, name){
     var fields = {
       listname: CONFIG.AWEBER_LISTNAME,
@@ -821,7 +782,6 @@
     renderResult(fn);
   });
 
-  /* ---------- step 4: result ---------- */
   function esc(s){ return String(s).replace(/[&<>"]/g, function(c){ return { '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;' }[c]; }); }
   function renderResult(firstName){
     loadData().then(function(){
@@ -829,7 +789,7 @@
       try {
         out = DATA.scorer(DATA.rules, DATA.events, state.sign, state.area, todayLocal(), visitorTz());
       } catch (e) {
-        // Outside the data range (or a bad zone): never a false answer.
+
         console.warn('[Cindy quiz] scorer refused:', e.message);
         show('s-error'); return;
       }
@@ -841,12 +801,12 @@
         var p = prettyDate(out.date);
         medal.className = 'medallion';
         medal.innerHTML = '<span class="m-month">' + p.month + '</span><span class="m-day">' + p.day + '</span><span class="m-wd">' + p.wd + '</span>';
-        // COPY (Kennedy, passed 2026-11-23): result headline (the scorer's line already names the date)
+
         document.getElementById('rHead').innerHTML = who + 'ere’s the day to watch.';
       } else {
         medal.className = 'medallion quiet';
         medal.innerHTML = '<span class="m-month">Next 30 days</span><span class="m-day">Quiet</span>';
-        // COPY (Kennedy, passed 2026-11-23): quiet headline
+
         document.getElementById('rHead').innerHTML = who + 'ere’s some good news, for once.';
       }
       document.getElementById('rLine').textContent = out.line || '';
@@ -858,7 +818,6 @@
     }).catch(function(e){ console.warn('[Cindy quiz]', e && e.message); show('s-error'); });
   }
 
-  // test hook for renders: ?demo=result&sign=Gemini&area=money
   if (useStub && params.get('demo') === 'result') {
     state = { birth: params.get('birth') || '1990-06-01', sign: params.get('sign') || 'Gemini', area: params.get('area') || 'money' };
     renderResult(params.get('name') || '');
